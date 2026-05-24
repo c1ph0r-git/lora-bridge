@@ -44,13 +44,15 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 - Integrates all connections into the board — no messy wiring.
 - Accepts standard modules that plug in directly.
 - Includes an MPPT solar charger and sensor telemetry features.
-- Simplifies maintenance and testing: swap a module without rebuilding the whole node.
+- Simplifies maintenance and testing: swap a module without rebuilding the whole node. 
 
 ---
 
 ## PCB Architecture
 
 ![pcb](images/pcb.png)
+
+![pcb](images/pcb-2.png)
 
 ### Schematic Diagram
 
