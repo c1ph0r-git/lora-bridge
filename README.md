@@ -11,7 +11,7 @@ Lora-Bridge: Unified Dual-Band (433 and 868 MHz) Solar Node for Meshtastic / Mes
 
 Unlike standard single-frequency nodes, this design bridges the gap between distinct regional Meshtastic/Meshcore networks by establishing a local hardware **UART bridge** between two dedicated **LoRa** modules: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
 
-Using this repeater bridge, user's client nodes can use either frequency and talk to others in a different frequency without requiring a second node, which improves the scope of communication as well as the resilience of the network.
+Using this repeater bridge, client nodes can use either frequency and talk to others in a different frequency without requiring a second node, which improves the scope of communication as well as the resilience of the network.
 
 ---
 
@@ -41,6 +41,8 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 It’s easier to see the difference when you compare both options:
 
+| Before | After |
+| :--- | :--- | :--- |
 | ![Before](/images/protoboard.webp) | ![After](/images/tidy.png) |
 | Before: A breadboard prototype with many wires and loose modules. | After: A MASN PCB build — everything integrated, clean, and organized. |
 
