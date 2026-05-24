@@ -9,28 +9,47 @@ Lora-Bridge: Unified Dual-Band (433 and 868 MHz) Solar Node for Meshtastic / Mes
 
 **Lora-Bridge** is an open-source, community-driven, solar-powered dual-band LoRa relay node. It merges the elegant architecture design of the **MASN** (Meshtastic Autonomous Solar Node) with a **Faketec-inspired** design and a hardware-integrated dual-band cross-frequency bridge system. 
 
-Unlike standard single-frequency nodes, this design bridges the gap between Portugal's distinct regional Meshtastic/Meshcore networks by establishing a local hardware **UART bridge** between two dedicated **LoRa** modules: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
+Unlike standard single-frequency nodes, this design bridges the gap between distinct regional Meshtastic/Meshcore networks by establishing a local hardware **UART bridge** between two dedicated **LoRa** modules: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
+
+Using this repeater bridge, user's client nodes can use either frequency and talk to others in a different frequency without requiring a second node, which improves the scope of communication as well as the resilience of the network.
 
 ---
 
 ## Key Features
 
-- **Dual HT-RA62 Modules:** Optimized exclusively around two identical Heltec HT-RA62 Semtech SX1262-based modules (1x Low-Frequency 433 MHz and 1x High-Frequency 868 MHz), ensuring balanced power consumption and identical RF driver logic.
+- **Dual LoRa Modules:** Optimized exclusively around two identical Heltec HT-RA62 Semtech SX1262-based modules (1x Low-Frequency 433 MHz and 1x High-Frequency 868 MHz), ensuring balanced power consumption and identical RF driver logic.
 - **Cross-Frequency UART Bridge:** Hardware serial interconnect loop acting as an autonomous cross-band repeater. Packets arriving on 433 MHz are parsed and repeated immediately over 868 MHz, and vice versa.
 - **Solar Core Power Path:** Complete MPPT solar charging circuit optimized for high efficiency during low-light winter days, integrated with comprehensive over-current and over-charge protections for Lithium batteries.
 - **Low Power Consumption:** The nRF52840 MCU of the promicro / nice!nano boards has a very low power consumption, ideal for a solar design.
 - **Sensor Integration and Telemetry:** This design integrates voltage/current sensor for the solar panel, battery and load, as well as enviromental sensor for temperature and humidity. 
-- **Faketec-Style Mechanical Design:** Extremely ruggedized layout featuring a specialized chassis and high-clearance placement.
+- **Faketec-Style Mechanical Design:** Extremely ruggedized layout featuring a specialized chassis and high-clearance placement. Easy to DIY.
 - **Minimal RF Internal Interference:** Dedicated isolated internal paths and shielding preventing cross-harmonic desensitization between the co-located 433 MHz and 868 MHz tracks.
+- **Modular Design:** this design choice makes it great to test different components in a clean framework.
+- **Price:** this PCB is based around easily available and cheap modules.
 
 ---
 
-## Reasoning
+## Motivation and Reasoning
 
-Anyone approaching Meshtastic usually finds the same thing: tutorials full of tangled wires, tiny solder joints, and boards designed for people with solid electronics experience. That’s discouraging for anyone just getting started — and even more frustrating if your goal is to build a stable solar-powered node for the roof or the field.
+Individual modules are cheap but breadboard-based builds often end up with a jungle of wires, unreliable connections, and an overall setup that easily leads to mistakes.
 
-From that need came MASN (Mesh Autonomous Solar Node) — a PCB designed so anyone can assemble a fully autonomous solar node in about an hour, without microscopes or messy wiring. The idea isn’t just to make it work, but to help you learn through the process. Building your own node gives you a deeper understanding of the Meshtastic ecosystem and lets you get the most out of it.
+Anyone approaching LoRa mesh networks usually finds the same thing: tutorials full of tangled wires, tiny solder joints, and boards designed for people with solid electronics experience. That’s discouraging for anyone just getting started — and even more frustrating if your goal is to build a stable solar-powered node for the roof or the field.
 
+This PCB solves this by integrating everything into a single, compact design.
+
+A PCB anyone can assemble in a short amount of time, without microscopes nor messy wiring. The idea isn’t just to make it work, but to help you learn through the process. Building your own node gives you a deeper understanding of the Meshtastic / Meshcore ecosystem and lets you get the most out of it.
+
+It’s easier to see the difference when you compare both options:
+
+| ![Before](/images/protoboard.webp) | ![After](/images/tidy.png) |
+| Before: A breadboard prototype with many wires and loose modules. | After: A MASN PCB build — everything integrated, clean, and organized. |
+
+### Key Advantages
+- Uses only THT components, easy to solder.
+- Integrates all connections into the board — no messy wiring.
+- Accepts standard modules that plug in directly.
+- Includes an MPPT solar charger and sensor telemetry features.
+- Simplifies maintenance and testing: swap a module without rebuilding the whole node.
 
 ---
 
@@ -110,8 +129,8 @@ Contributions are heavily welcomed! If you are optimizing the RF trace filters f
 This project is licensed under the CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN OHL-S v2). You are free to copy, modify and distribute this design, provided you maintain identical licensing protections on any derivative works. See the LICENSE file for full conditions.
 
 ## Acknowledgments
-Inspired heavily by Daniel P. Costas' MASN Node.
+Heavily inspired by Daniel P. Costas' MASN Node.
 
 Bridging architecture concept derived from Meshcore Portugal (WSL3 Tutorials).
 
-Mechanical aesthetics adapted from industrial Faketec field node enclosures.
+Mechanical aesthetics adapted from Faketec node design.
