@@ -77,6 +77,10 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 PCB Size: 63.4 mm × 96.9 mm
 Mounting Holes: 56.7 mm × 90 mm
 
+### Gerber File
+
+
+
 ---
 
 ## Modules
@@ -102,6 +106,17 @@ Other:
 - User and Reset Buttons
 - Connectors for Solar Panel, Battery, and Antenna
 
+### Bill of Materials (BOM)
+
+---
+
+## Assembly & Mechanical Build
+3D Printing the Frame: Download the structural STL files located in the /hardware/enclosure directory. Print the internal frame plate using PETG or ASA to withstand high internal temperatures during intense summer conditions.
+
+PCB Population: Solder the passive solar components onto the main board following the schematic provided in /hardware/pcb. Mount the two HT-RA62 modules into their respective isolated slots.
+
+RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are physically spaced apart at least 50 cm or oriented perpendicular to each other on the external mounting bracket to limit localized desensitization.
+
 ---
 
 ## Firmware Settings
@@ -113,14 +128,17 @@ meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode
 - For Module 2 (868 MHz)
 meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
 
-## Assembly & Mechanical Build
-3D Printing the Frame: Download the structural STL files located in the /hardware/enclosure directory. Print the internal frame plate using PETG or ASA to withstand high internal temperatures during intense summer conditions.
+---
 
-PCB Population: Solder the passive solar components onto the main board following the schematic provided in /hardware/pcb. Mount the two HT-RA62 modules into their respective isolated slots.
+## Future Improvements
 
-RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are physically spaced apart at least 50 cm or oriented perpendicular to each other on the external mounting bracket to limit localized desensitization.
+
+
+---
 
 ## Repository Structure
+
+Rep.
 ├── firmware/              # Bridge communication configs and node flash binaries
 ├── hardware/
 │   ├── pcb/               # KiCad schematics, layout design, and Gerber files
