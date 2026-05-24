@@ -77,9 +77,11 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 PCB Size: 63.4 mm × 96.9 mm
 Mounting Holes: 56.7 mm × 90 mm
 
-### Gerber File
+### Ordering the PCB - Gerber File
 
+You can order the PCB directly from JLCPCB or PCBWay (the design files are linked in the Bill of Materials).
 
+The process is very simple — just upload the provided files, choose your options, and place the order. 
 
 ---
 
@@ -110,6 +112,17 @@ Other:
 
 ---
 
+## Firmware Settings
+Both modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
+
+- For Module 1 (433 MHz)
+meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+
+- For Module 2 (868 MHz)
+meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+
+---
+
 ## Assembly & Mechanical Build
 3D Printing the Frame: Download the structural STL files located in the /hardware/enclosure directory. Print the internal frame plate using PETG or ASA to withstand high internal temperatures during intense summer conditions.
 
@@ -119,14 +132,13 @@ RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are p
 
 ---
 
-## Firmware Settings
-Both modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
+## Safety and Important Warnings
 
-- For Module 1 (433 MHz)
-meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+⚠️ Never power on the node without an antenna connected. You can permanently damage the LoRa module.
 
-- For Module 2 (868 MHz)
-meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+⚠️ Do not power the board via USB and solar/battery at the same time. It may damage your computer’s USB port.
+
+⚠️ If soldering header pins on the LoRa module, make sure the antenna connector doesn’t touch pin 1 (RF output). When mounted directly to the PCB as SMD, this issue doesn’t occur.
 
 ---
 
