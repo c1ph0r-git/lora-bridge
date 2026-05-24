@@ -74,8 +74,9 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 ![pcb](images/pcb-2.png)
 
 ### Dimensions and Mounting
-PCB Size: 63.4 mm × 96.9 mm
-Mounting Holes: 56.7 mm × 90 mm
+
+- PCB Size: 65 mm × 120 mm
+- Mounting Holes: M2.5
 
 ### Ordering the PCB - Gerber File
 
