@@ -50,26 +50,17 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ## PCB Architecture
 
-### Hardware Block Diagram
+![pcb](images/pcb.png)
 
->[ 12V / 5V Solar Panel ]
->                 │
->                 ▼
->       [ MASN MPPT Solar Charger ]
->                 │
->                 ├──────────────┐
->                 ▼              ▼
->       [ Protection Circuit ] [ Battery Bank (21700) ]
->                 │
->     ┌───────────┴───────────┐
->     │ (3.3V Pure Rail)       │ (3.3V Pure Rail)
->     ▼                       ▼
+### Schematic Diagram
 
----
 
-## Hardware Specifications
 
-### Main Components
+### Dimensions and Mounting
+PCB Size: 63.4 mm × 96.9 mm
+Mounting Holes: 56.7 mm × 90 mm
+
+### Hardware - Main Components
 
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
 - LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**)).
