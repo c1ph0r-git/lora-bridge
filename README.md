@@ -69,14 +69,19 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ## Hardware Specifications
 
-| Component | Specification | Description |
-| :--- | :--- | :--- |
-| **LoRa Transceiver (LF)** | Heltec HT-RA62 (433 MHz) | Handles local Portuguese standard sub-giga mesh |
-| **LoRa Transceiver (HF)** | Heltec HT-RA62 (868 MHz) | Handles standard European European backbone mesh |
-| **Bridge Interface** | Direct Hardware UART | Interspersed RX/TX cross-over at `115200 bps` |
-| **Solar Controller** | MASN Integrated MPPT | High-efficiency step-down solar tracker |
-| **Battery Chemistry** | Lithium-Ion / LiFePO4 | Configurable cell holders optimized for 21700 cells |
-| **Enclosure Rating** | IP67 Equivalent | Faketec-inspired thick-walled polycarbonate structure |
+### Main Components
+
+- MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
+- LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**)).
+- Solar Charger: MPPT **CN3791** or **CN3065**
+- Current and Voltage Sensor: **INA3221** (three channels)
+  - Channel 1 (CH1): nodes & sensors.
+  - Channel 2 (CH2): output of the MPPT module.
+  - Channel 3 (CH3): solar panel.
+- Temperature and Humidity Sensor: **BME280**
+- Solar panel and battery on-off switches
+- User and Reset Buttons
+- Connectors for Solar Panel, Battery, and Antenna
 
 ---
 
