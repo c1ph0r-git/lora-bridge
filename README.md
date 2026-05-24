@@ -1,4 +1,4 @@
-# lora-bridge
+# Dual-Band Solar LoRa Mesh
 
 Lora-Bridge: Unified Dual-Band (433 and 868 MHz) Solar Node for Meshtastic / Meshcore
 
