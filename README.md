@@ -39,22 +39,6 @@ This PCB solves this by integrating everything into a single, compact design.
 
 A PCB anyone can assemble in a short amount of time, without microscopes nor messy wiring. The idea isn’t just to make it work, but to help you learn through the process. Building your own node gives you a deeper understanding of the Meshtastic / Meshcore ecosystem and lets you get the most out of it.
 
-It’s easier to see the difference when you compare both options:
-
-<table>
-    <tr>
-        <td>
-          Before 
-        <td>
-          ![Before](/images/protoboard.webp) 
-    <tr>
-        <td>
-          After
-        <td>
-          ![After](/images/tidy.png)
-
-Before: A breadboard prototype with many wires and loose modules. After: A MASN PCB build — everything integrated, clean, and organized. 
-
 ### Key Advantages
 - Uses only THT components, easy to solder.
 - Integrates all connections into the board — no messy wiring.
@@ -64,7 +48,7 @@ Before: A breadboard prototype with many wires and loose modules. After: A MASN 
 
 ---
 
-## System Architecture
+## PCB Architecture
 
 ### Hardware Block Diagram
 
