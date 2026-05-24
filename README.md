@@ -7,6 +7,16 @@ Lora-Bridge: Unified Dual-Band (433 and 868 MHz) Solar Node for Meshtastic / Mes
 [![Meshcore](https://img.shields.io/badge/Meshcore-Compatible-green.svg)](https://meshcore.io)
 [![Hardware](https://img.shields.io/badge/Hardware-Open%20Source-orange.svg)](#)
 
+---
+
+## Disclaimer
+
+This is a prototype test board under development. 
+
+---
+
+## About
+
 **Lora-Bridge** is an open-source, community-driven, solar-powered dual-band LoRa relay node. It merges the elegant architecture design of the **MASN** (Meshtastic Autonomous Solar Node) with a **Faketec-inspired** design and a hardware-integrated dual-band cross-frequency bridge system. 
 
 Unlike standard single-frequency nodes, this design bridges the gap between distinct regional Meshtastic/Meshcore networks by establishing a local hardware **UART bridge** between two dedicated **LoRa** modules: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
