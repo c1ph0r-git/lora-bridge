@@ -38,18 +38,18 @@ From that need came MASN (Mesh Autonomous Solar Node) — a PCB designed so anyo
 
 ### Hardware Block Diagram
 
-[ 12V / 5V Solar Panel ]
-                 │
-                 ▼
-       [ MASN MPPT Solar Charger ]
-                 │
-                 ├──────────────┐
-                 ▼              ▼
-       [ Protection Circuit ] [ Battery Bank (21700) ]
-                 │
-     ┌───────────┴───────────┐
-     │ (3.3V Pure Rail)       │ (3.3V Pure Rail)
-     ▼                       ▼
+>[ 12V / 5V Solar Panel ]
+>                 │
+>                 ▼
+>       [ MASN MPPT Solar Charger ]
+>                 │
+>                 ├──────────────┐
+>                 ▼              ▼
+>       [ Protection Circuit ] [ Battery Bank (21700) ]
+>                 │
+>     ┌───────────┴───────────┐
+>     │ (3.3V Pure Rail)       │ (3.3V Pure Rail)
+>     ▼                       ▼
 
 ---
 
@@ -82,20 +82,20 @@ To set up the physical bridge between the two Heltec HT-RA62 modules, route the 
 ### Meshtastic Firmware Settings
 Both modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
 
-# For Module 1 (433 MHz)
+- For Module 1 (433 MHz)
 meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
 
-# For Module 2 (868 MHz)
+- For Module 2 (868 MHz)
 meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
 
-Assembly & Mechanical Build
+## Assembly & Mechanical Build
 3D Printing the Frame: Download the structural STL files located in the /hardware/enclosure directory. Print the internal frame plate using PETG or ASA to withstand high internal temperatures during intense summer conditions.
 
 PCB Population: Solder the passive solar components onto the main board following the schematic provided in /hardware/pcb. Mount the two HT-RA62 modules into their respective isolated slots.
 
 RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are physically spaced apart at least 50 cm or oriented perpendicular to each other on the external mounting bracket to limit localized desensitization.
 
-Repository Structure
+## Repository Structure
 ├── firmware/              # Bridge communication configs and node flash binaries
 ├── hardware/
 │   ├── pcb/               # KiCad schematics, layout design, and Gerber files
@@ -103,13 +103,13 @@ Repository Structure
 ├── docs/                  # Detailed assembly documentation and RF guidelines
 └── README.md              # Project overview
 
-Contributing
+## Contributing
 Contributions are heavily welcomed! If you are optimizing the RF trace filters for the HT-RA62 or improving the serial bridging packet structure, please feel free to open an Issue or submit a Pull Request.
 
-License
+## License
 This project is licensed under the CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN OHL-S v2). You are free to copy, modify and distribute this design, provided you maintain identical licensing protections on any derivative works. See the LICENSE file for full conditions.
 
-Acknowledgments
+## Acknowledgments
 Inspired heavily by Daniel P. Costas' MASN Node.
 
 Bridging architecture concept derived from Meshcore Portugal (WSL3 Tutorials).
