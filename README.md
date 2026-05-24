@@ -50,7 +50,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ## PCB Architecture
 
-![pcb](images/pcb.png) ![pcb3d](images/tidy.png)
+![pcb](images/pcb.png)
 
 ### Schematic Diagram
 
