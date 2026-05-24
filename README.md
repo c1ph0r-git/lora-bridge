@@ -42,7 +42,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 It’s easier to see the difference when you compare both options:
 
 | Before | After |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- |
 | ![Before](/images/protoboard.webp) | ![After](/images/tidy.png) |
 | Before: A breadboard prototype with many wires and loose modules. | After: A MASN PCB build — everything integrated, clean, and organized. |
 
