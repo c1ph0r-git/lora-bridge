@@ -7,19 +7,30 @@ Lora-Bridge: Unified Dual-Band (433 and 868 MHz) Solar Node for Meshtastic / Mes
 [![Meshcore](https://img.shields.io/badge/Meshcore-Compatible-green.svg)](https://meshcore.io)
 [![Hardware](https://img.shields.io/badge/Hardware-Open%20Source-orange.svg)](#)
 
-**Lora-Bridge** is an open-source, ultra-rugged, solar-powered dual-band Meshtastic relay node. It merges the elegant mechanical and power architecture of the **MASN** (Meshtastic Autonomous Solar Node) with a heavy-duty, industrial **Faketec-inspired** design and a hardware-integrated dual-band cross-frequency bridge system. 
+**Lora-Bridge** is an open-source, community-driven, solar-powered dual-band LoRa relay node. It merges the elegant architecture design of the **MASN** (Meshtastic Autonomous Solar Node) with a **Faketec-inspired** design and a hardware-integrated dual-band cross-frequency bridge system. 
 
-Unlike standard single-frequency nodes, this design bridges the gap between Portugal's distinct regional Meshtastic networks by establishing a local hardware **UART bridge** between two dedicated **Heltec HT-RA62** LoRa modules: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
+Unlike standard single-frequency nodes, this design bridges the gap between Portugal's distinct regional Meshtastic/Meshcore networks by establishing a local hardware **UART bridge** between two dedicated **LoRa** modules: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
 
 ---
 
 ## Key Features
 
-- **Faketec-Style Mechanical Design:** Extremely ruggedized, impact-resistant, and weather-sealed layout featuring a specialized CNC/3D-printed internal chassis, robust heavy-duty latches, and high-clearance gland placement.
 - **Dual HT-RA62 Modules:** Optimized exclusively around two identical Heltec HT-RA62 Semtech SX1262-based modules (1x Low-Frequency 433 MHz and 1x High-Frequency 868 MHz), ensuring balanced power consumption and identical RF driver logic.
 - **Cross-Frequency UART Bridge:** Hardware serial interconnect loop acting as an autonomous cross-band repeater. Packets arriving on 433 MHz are parsed and repeated immediately over 868 MHz, and vice versa.
-- **MASN Solar Core Power Path:** Complete MPPT solar charging circuit optimized for high efficiency during low-light winter days, integrated with comprehensive over-current, over-charge, and temperature protections for a 18650/21700 Li-ion battery bank.
-- **Zero RF Internal Interference:** Dedicated isolated internal shielding compartments preventing cross-harmonic desensitization between the co-located 433 MHz and 868 MHz antennas.
+- **Solar Core Power Path:** Complete MPPT solar charging circuit optimized for high efficiency during low-light winter days, integrated with comprehensive over-current and over-charge protections for Lithium batteries.
+- **Low Power Consumption:** The nRF52840 MCU of the promicro / nice!nano boards has a very low power consumption, ideal for a solar design.
+- **Sensor Integration and Telemetry:** This design integrates voltage/current sensor for the solar panel, battery and load, as well as enviromental sensor for temperature and humidity. 
+- **Faketec-Style Mechanical Design:** Extremely ruggedized layout featuring a specialized chassis and high-clearance placement.
+- **Minimal RF Internal Interference:** Dedicated isolated internal paths and shielding preventing cross-harmonic desensitization between the co-located 433 MHz and 868 MHz tracks.
+
+---
+
+## Reasoning
+
+Anyone approaching Meshtastic usually finds the same thing: tutorials full of tangled wires, tiny solder joints, and boards designed for people with solid electronics experience. That’s discouraging for anyone just getting started — and even more frustrating if your goal is to build a stable solar-powered node for the roof or the field.
+
+From that need came MASN (Mesh Autonomous Solar Node) — a PCB designed so anyone can assemble a fully autonomous solar node in about an hour, without microscopes or messy wiring. The idea isn’t just to make it work, but to help you learn through the process. Building your own node gives you a deeper understanding of the Meshtastic ecosystem and lets you get the most out of it.
+
 
 ---
 
@@ -91,6 +102,7 @@ Repository Structure
 │   └── enclosure/         # Faketec-style industrial 3D prints and step files
 ├── docs/                  # Detailed assembly documentation and RF guidelines
 └── README.md              # Project overview
+
 Contributing
 Contributions are heavily welcomed! If you are optimizing the RF trace filters for the HT-RA62 or improving the serial bridging packet structure, please feel free to open an Issue or submit a Pull Request.
 
