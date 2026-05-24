@@ -50,48 +50,61 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ## PCB Architecture
 
-![pcb](images/pcb.png)
-
-![pcb](images/pcb-2.png)
-
 ### Schematic Diagram
 
 
+
+#### Interconnection & Bridge Configuration
+
+The Portuguese cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
+
+##### UART Pinout Interconnect
+To set up the physical UART-1 bridge between the two nRf52840 modules (promicro or nice!nano), route the cross-over communication as follows:
+
+| Module 1 (433 MHz LF) | Module 2 (868 MHz HF) | Description |
+| :--- | :--- | :--- |
+| `TX` (Pin 3: P0.08) | `RX` (Pin 2: P0.06) | 433 MHz Traffic to 868 MHz Grid |
+| `RX` (Pin 2: P0.06) | `TX` (Pin 3: P0.08) | 868 MHz Traffic to 433 MHz Grid |
+| `GND` | `GND` | Common Ground Reference |
+
+### PCB Design a Layout
+
+![pcb](images/pcb.png)
+
+![pcb](images/pcb-2.png)
 
 ### Dimensions and Mounting
 PCB Size: 63.4 mm × 96.9 mm
 Mounting Holes: 56.7 mm × 90 mm
 
+---
+
+## Modules
+
 ### Hardware - Main Components
 
+Core:
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
 - LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**)).
+
+Power:
 - Solar Charger: MPPT **CN3791** or **CN3065**
+
+Sensors:
 - Current and Voltage Sensor: **INA3221** (three channels)
   - Channel 1 (CH1): nodes & sensors.
   - Channel 2 (CH2): output of the MPPT module.
   - Channel 3 (CH3): solar panel.
 - Temperature and Humidity Sensor: **BME280**
+
+Other:
 - Solar panel and battery on-off switches
 - User and Reset Buttons
 - Connectors for Solar Panel, Battery, and Antenna
 
 ---
 
-## Interconnection & Bridge Configuration
-
-The Portuguese cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
-
-### UART Pinout Interconnect
-To set up the physical bridge between the two Heltec HT-RA62 modules, route the cross-over communication as follows:
-
-| Module 1 (433 MHz LF) | Module 2 (868 MHz HF) | Description |
-| :--- | :--- | :--- |
-| `TX` (GPIO X) | `RX` (GPIO Y) | 433 MHz Traffic to 868 MHz Grid |
-| `RX` (GPIO Y) | `TX` (GPIO X) | 868 MHz Traffic to 433 MHz Grid |
-| `GND` | `GND` | Common Ground Reference |
-
-### Meshtastic Firmware Settings
+## Firmware Settings
 Both modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
 
 - For Module 1 (433 MHz)
