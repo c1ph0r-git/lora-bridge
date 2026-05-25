@@ -60,21 +60,6 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ## PCB Architecture
 
-### PCB Design and Layout
-
-![pcb](images/pcb_top.svg) ![pcb](images/pcb_bottom.svg)
-
-### Dimensions and Mounting
-
-- PCB Size: 65 mm × 120 mm
-- Mounting Holes: M2.5
-
-### Ordering the PCB - Gerber File
-
-You can order the PCB directly from JLCPCB or PCBWay (the design files are linked in the Bill of Materials).
-
-The process is very simple — just upload the provided files, choose your options, and place the order. 
-
 ### Schematic Diagram
 
 ![schematic](/pcb/schematic/Schematic_LoraMesh-dual-band-(433-and-868MHz)_2026-05-25.png)
@@ -94,6 +79,23 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 | `RX` (Pin 2: P0.06) | `TX` (Pin 3: P0.08) | 868 MHz Traffic to 433 MHz Grid |
 | `GND` | `GND` | Common Ground Reference |
 
+### PCB Design and Layout
+
+![pcb](images/pcb_top.svg) ![pcb](images/pcb_bottom.svg)
+
+### Dimensions and Mounting
+
+- PCB Size: 65 mm × 120 mm
+- Mounting Holes: M2.5
+
+### Ordering the PCB - Gerber File
+
+You can order the PCB directly from JLCPCB or PCBWay (the design files are linked in the Bill of Materials).
+
+The process is very simple — just upload the provided files, choose your options, and place the order. 
+
+Download [here](/pcb/gerber/Gerber_LoraMesh-dual-band-(433-and-868MHz)_PCB_LoraMesh-dual-band-(433-and-868MH_2026-05-25.zip)
+
 ---
 
 ## Modules
@@ -102,7 +104,7 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 
 Core:
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
-- LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**)).
+- LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
 
 Power:
 - Solar Charger: MPPT **CN3791** or **CN3065**
@@ -117,9 +119,14 @@ Sensors:
 Other:
 - Solar panel and battery on-off switches
 - User and Reset Buttons
-- Connectors for Solar Panel, Battery, and Antenna
+- Connectors for Solar Panel, Battery, and Antennas
 
 ### Bill of Materials (BOM)
+
+
+
+
+
 
 ---
 
