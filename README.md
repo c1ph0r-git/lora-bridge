@@ -110,12 +110,16 @@ Core:
 Power:
 - Solar Charger: MPPT **CN3791** or **CN3065**
 
+![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
+
 Sensors:
 - Current and Voltage Sensor: **INA3221** (three channels)
   - Channel 1 (CH1): nodes & sensors.
   - Channel 2 (CH2): output of the MPPT module.
   - Channel 3 (CH3): solar panel.
 - Temperature and Humidity Sensor: **BME280**
+
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
 Other:
 - Solar panel and battery on-off switches
