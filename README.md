@@ -142,7 +142,7 @@ Other PCB assembly components:
 
 ### Hardware - Other Essencial Components
 
-- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female
+- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female (10cm)
 - 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
 - 5V Solar Panel: like NIVIAN 9W from Amazon
 - Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
@@ -158,11 +158,14 @@ Other PCB assembly components:
 
 ### Bill of Materials (BOM)
 
+#### All PCB Components (BOM)
+
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Dual-Band PCB	| 1	| 5€	| Download	|  |
+| Dual-Band PCB	| 1	| 7€	| Download	|  |
 | Promicro/NiceNano (NRF52840)	| 1	| 3€	| Aliexpress	| Choose wisely, some have bugs |
-| HT-RA62 LoRa Module |	2 |	13,8€ |	Aliexpress	| |
+| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	Aliexpress	| |
+| HT-RA62-LF 433 LoRa |	1 |	6,74€ |	Aliexpress	| |
 | MPPT CN3065 Charger	| 1	| 2,20€	| Aliexpress	| |
 | INA3221 Current Sensor	| 1 |	1,72€ |	Aliexpress	| Buy the purple one, not the black |
 | BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	Aliexpress	| Choose 6-pin, 3.3 V version |
@@ -173,15 +176,25 @@ Other PCB assembly components:
 | SS12D10 Switches	| 2	| 0,99€ |	Aliexpress | |	
 | Push Buttons 3×6×5 mm	| 4	| 1,8€ |	Aliexpress	| |
 
+#### Other Essencial Components (BOM)
 
-Antenna Cable UFL to SMA	1	2€	Aliexpress	15 cm female version
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+Antenna Cable UFL to SMA	1	2€	Aliexpress	10 cm female version
 GrandWisdom 868 MHz Antenna	1	3,40€	Aliexpress	SMA male connector
 5V Solar Panel	1	6,89€	Aliexpress	Claims 35 W, but not real
-
-
 Li-ion Battery 4400 mAh / 3.7 V	1	10€	Aliexpress	With PH2.0 connector and BMS (Battery Management System)
 
 
+- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female (10cm)
+- 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
+- 5V Solar Panel: like NIVIAN 9W from Amazon
+- Battery: ~10,000mAh 
+
+#### Enclosure (BOM)
+
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
 Part	Qty.	Cost	Source	Notes
 Weatherproof Electrical Box 158×90×60mm IP65	1	5,69€	Aliexpress	
 Vent Plug M5×0.8-7 IP67	1	2,76€	Aliexpress	
@@ -191,11 +204,10 @@ Solar Panel Cable	1	–	–	Any you have on hand
 Threaded Inserts M2.5×5 mm OD 3.5 mm	4	2,34€	Aliexpress	
 Screws M2.5×5 mm	4	1,90€	Aliexpress	
 
-
-
 ### Overall Cost
 
-
+This gross estimate does not consider required time, solder iron, flux, solder, glue, galvanazing tape, capton tape, silicone, drill bits, brackets.
+Nor does it include shipping and VAT.
 
 ---
 
@@ -203,7 +215,7 @@ Screws M2.5×5 mm	4	1,90€	Aliexpress
 
 
 ### Firmware Settings
-Both modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
+Both nrf52840 modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
 
 - For Module 1 (433 MHz)
 meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
@@ -214,7 +226,6 @@ meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode
 ---
 
 ## Assembly & Mechanical Build
-3D Printing the Frame: Download the structural STL files located in the /hardware/enclosure directory. Print the internal frame plate using PETG or ASA to withstand high internal temperatures during intense summer conditions.
 
 PCB Population: Solder the passive solar components onto the main board following the schematic provided in /hardware/pcb. Mount the two HT-RA62 modules into their respective isolated slots.
 
@@ -234,12 +245,17 @@ RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are p
 
 ## Future Improvements
 
-
+[] Decrease PCB size to a maximum of 100mm
+[] Include capacitors on LoRa modules and I2C lines
+[] Include capacitors and resistors on buttons to improve stability (avoid bouncing) and filter noise
+[] Include header for tft screen, buzzer, vibrator motor via mosfet circuit to decrease power consumption
+[] Include a battery maximum discharge protection circuit  
 
 ---
 
 ## Repository Structure
 
+```
 Rep.
 ├── firmware/              # Bridge communication configs and node flash binaries
 ├── hardware/
@@ -247,6 +263,7 @@ Rep.
 │   └── enclosure/         # Faketec-style industrial 3D prints and step files
 ├── docs/                  # Detailed assembly documentation and RF guidelines
 └── README.md              # Project overview
+```
 
 ## Contributing
 Contributions are heavily welcomed! If you are optimizing the RF trace filters for the HT-RA62 or improving the serial bridging packet structure, please feel free to open an Issue or submit a Pull Request.
