@@ -108,7 +108,7 @@ Core:
 ![nrf](images/bom-promico-mcu-300x300.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
 
 Power:
-- Solar Charger: MPPT **CN3791** or **CN3065** (recommended)
+- Solar Charger: MPPT **CN3791** or **CN3065** 
 
 ![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
 
@@ -147,7 +147,10 @@ Other PCB assembly components:
 - 5V Solar Panel: like NIVIAN 9W from Amazon
 - Battery: 
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+| Configuration | Total Capacity | Autonomy Estimate | Notes | 
+| :----------- |:---------------|:---------------|:---------------| 
+| 2x 21700 Cell (e.g., Samsung 50E) | 10,000 mAh | ~8 Days | Ultra-compact, fits well in small IP65 boxes. |
+| 3x 18650 Cells in Parallel (1S3P) | 10,200 mAh | ~8 Days | Highly recommended for alpine or low-sun climates. |
 
 ### Hardware - Enclosure
 
@@ -186,7 +189,6 @@ Li-ion Battery 4400 mAh / 3.7 V	1	10€	Aliexpress	With PH2.0 connector and BMS 
 Push Buttons 3×6×5 mm	2		Aliexpress	
 SS12D10 Switches	2	0,99€	Aliexpress	
 2P Screw Terminals for Battery/Solar	2	1,80€	Aliexpress	
-
 
 
 Part	Qty.	Cost	Source	Notes
