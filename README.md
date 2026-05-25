@@ -79,9 +79,7 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 
 ### PCB Design a Layout
 
-![pcb](images/pcb_top.svg)
-
-![pcb](images/pcb_bottom.svg)
+![pcb](images/pcb_top.svg) ![pcb](images/pcb_bottom.svg)
 
 ### Dimensions and Mounting
 
