@@ -178,8 +178,8 @@ Other PCB assembly components:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| NIVIAN 9W 5V Solar Panel	| 1	| 6,89€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
-| 21700 Cell | 2 | XX€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
+| NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
+| 21700 Cell | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
 
 Antenna and Cable Options:
 
@@ -187,17 +187,17 @@ Antenna and Cable Options:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
-| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
-| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
+| IPX to N-Type Female (10cm) | 2 | 3,7€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
+| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
+| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
 
 - SMA
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| UFL/IPX to SMA | 2 | x€ | [AliExpress](https://s.click.aliexpress.com/e/_c4ltNPbF) | 10 cm |
-| 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
-| 433MHz Antenna GIZONT 4dBm SMA | 1 | xx€ | [AliExpress](https://pt.aliexpress.com/item/1005005382213254.html?spm=a2g0o.productlist.main.1.39dbsxfssxfsa2&algo_pvid=5ade51c1-efee-4c7c-829c-3de498bfd266&algo_exp_id=5ade51c1-efee-4c7c-829c-3de498bfd266-0&pdp_ext_f=%7B%22order%22%3A%2271%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%216.05%216.05%21%21%2146.67%2146.67%21%402103864c17797506007551770e25a3%2112000032827094565%21sea%21PT%21906403403%21X%211%210%21n_tag%3A-29919%3Bd%3Ad60e1a63%3Bm03_new_user%3A-29895&curPageLogUid=W2ixesLj7YaE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005382213254%7C_p_origin_prod%3A) | |
+| UFL/IPX to SMA | 2 | 3,75€ | [AliExpress](https://s.click.aliexpress.com/e/_c4ltNPbF) | 10 cm |
+| 868MHz Antenna GIZONT 17cm SMA | 1 | 6,65€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
+| 433MHz Antenna GIZONT 4dBm SMA | 1 | 6,05€ | [AliExpress](https://pt.aliexpress.com/item/1005005382213254.html?spm=a2g0o.productlist.main.1.39dbsxfssxfsa2&algo_pvid=5ade51c1-efee-4c7c-829c-3de498bfd266&algo_exp_id=5ade51c1-efee-4c7c-829c-3de498bfd266-0&pdp_ext_f=%7B%22order%22%3A%2271%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%216.05%216.05%21%21%2146.67%2146.67%21%402103864c17797506007551770e25a3%2112000032827094565%21sea%21PT%21906403403%21X%211%210%21n_tag%3A-29919%3Bd%3Ad60e1a63%3Bm03_new_user%3A-29895&curPageLogUid=W2ixesLj7YaE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005382213254%7C_p_origin_prod%3A) | |
 
 #### Enclosure (BOM)
 
