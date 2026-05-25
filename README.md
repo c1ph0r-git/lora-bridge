@@ -105,6 +105,8 @@ Core:
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
 - LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
 
+![promicro](images/ProMicroNRF52840_Foot.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
+
 Power:
 - Solar Charger: MPPT **CN3791** or **CN3065**
 
@@ -122,7 +124,43 @@ Other:
 
 ### Bill of Materials (BOM)
 
+| Left-Aligned | Center-Aligned | 
+| :----------- |:--------------:| 
+| This         | is             | 
+| aligned      | text           | 
+| example      | table          | 
 
+Part	Qty.	Cost	Source	Notes
+MASN HT-RA62 PCB	1	5€	Download	
+HT-RA62 LoRa Module	1	6,74€	Aliexpress	
+
+
+Part	Qty.	Cost	Source	Notes
+NiceNano (NRF52840)	1	3€	Aliexpress	Get the red PCB version
+Antenna Cable UFL to SMA	1	2€	Aliexpress	15 cm female version
+GrandWisdom 868 MHz Antenna	1	3,40€	Aliexpress	SMA male connector
+5V Solar Panel	1	6,89€	Aliexpress	Claims 35 W, but not real
+MPPT CN3791 Charger	1	2,20€	Aliexpress	Select the 6V version
+INA3221 Current Sensor	1	1,72€	Aliexpress	Buy the purple one, not the black
+BMP280 Temperature/Humidity Sensor	1	0,94€	Aliexpress	Choose 6-pin, 3.3 V version
+Li-ion Battery 4400 mAh / 3.7 V	1	10€	Aliexpress	With PH2.0 connector and BMS (Battery Management System)
+40-pin Straight Headers 2.54 mm	2	1,4€	Aliexpress	
+40-pin 90° Headers 2.54 mm	1		Aliexpress	
+2P JST PH 2.0 mm Battery Connector	1	1,62€	Aliexpress	
+Push Buttons 3×6×5 mm	2		Aliexpress	
+SS12D10 Switches	2	0,99€	Aliexpress	
+2P Screw Terminals for Battery/Solar	2	1,80€	Aliexpress	
+
+
+
+Part	Qty.	Cost	Source	Notes
+Weatherproof Electrical Box 158×90×60mm IP65	1	5,69€	Aliexpress	
+Vent Plug M5×0.8-7 IP67	1	2,76€	Aliexpress	
+Cable Gland M12 IP68	1	1,67	Aliexpress	Fits 3 – 6.5 mm cables
+Solar Panel Cable	1	–	–	Any you have on hand
+3D-Printed Mount for Battery & PCB	1		Download	Ask a friend with a 3D printer
+Threaded Inserts M2.5×5 mm OD 3.5 mm	4	2,34€	Aliexpress	
+Screws M2.5×5 mm	4	1,90€	Aliexpress	
 
 
 
