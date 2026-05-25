@@ -145,12 +145,7 @@ Other PCB assembly components:
 - Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female
 - 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
 - 5V Solar Panel: like NIVIAN 9W from Amazon
-- Battery: 
-
-| Configuration | Total Capacity | Autonomy Estimate | Notes | 
-| :----------- |:---------------|:---------------|:---------------| 
-| 2x 21700 Cell (e.g., Samsung 50E) | 10,000 mAh | ~8 Days | Ultra-compact, fits well in small IP65 boxes. |
-| 3x 18650 Cells in Parallel (1S3P) | 10,200 mAh | ~8 Days | Highly recommended for alpine or low-sun climates. |
+- Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
 
 ### Hardware - Enclosure
 
