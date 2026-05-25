@@ -160,7 +160,7 @@ Other PCB assembly components:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber))	|  |
+| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
 | Promicro/NiceNano (NRF52840)	| 1	| 3€	| [AliExpress]()	| Choose wisely, some have bugs |
 | HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
 | HT-RA62-LF 433 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
@@ -253,9 +253,16 @@ meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode
 
 ## Assembly & Mechanical Build
 
-PCB Population: Solder the passive solar components onto the main board following the schematic provided in /hardware/pcb. Mount the two HT-RA62 modules into their respective isolated slots.
+PCB Population: Solder the passive solar components onto the main board following the schematic provided. Mount the two HT-RA62 modules into their respective isolated slots.
 
 RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are physically spaced apart at least 50 cm or oriented perpendicular to each other on the external mounting bracket to limit localized desensitization.
+
+### Step by Step Assembly
+
+
+
+
+
 
 ---
 
