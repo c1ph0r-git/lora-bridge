@@ -11,7 +11,7 @@ Lora-Bridge: Unified Dual-Band (433 and 868 MHz) Solar Node for Meshtastic / Mes
 
 ## Disclaimer
 
-This is a prototype test board under development. 
+This is a prototype board under development. I take no responsability for its misuse. 
 
 ---
 
@@ -62,7 +62,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ### Schematic Diagram
 
-
+![schematic](/pcb/schematic/Schematic_LoraMesh-dual-band-(433-and-868MHz)_2026-05-25.png)
 
 #### Interconnection & Bridge Configuration
 
