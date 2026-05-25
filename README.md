@@ -94,7 +94,7 @@ You can order the PCB directly from JLCPCB or PCBWay (the design files are linke
 
 The process is very simple — just upload the provided files, choose your options, and place the order. 
 
-Download [here]("/pcb/gerber/Gerber_LoraMesh-dual-band-(433-and-868MHz)_PCB_LoraMesh-dual-band-(433-and-868MH_2026-05-25.zip")
+Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 ---
 
