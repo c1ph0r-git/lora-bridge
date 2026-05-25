@@ -161,7 +161,7 @@ Other PCB assembly components:
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
-| Promicro/NiceNano (NRF52840)	| 1	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
+| Promicro/NiceNano (NRF52840)	| 2	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
 | HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
 | HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
 | MPPT CN3065 Charger	| 1	| 2,20€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| |
@@ -174,8 +174,6 @@ Other PCB assembly components:
 | SS12D10 Switches	| 2	| 0,99€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3dBUABd) | |	
 | Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
 
-- PCB & Board Components: €38.71
-
 #### Other Essencial Components (BOM)
 
 | Part | Qty. | Cost | Source | Notes | 
@@ -183,15 +181,13 @@ Other PCB assembly components:
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
 | 21700 Cell | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
 
-- Essential Power Components (9W Solar Panel + 2x 21700 Cells): €26.90
-
 Antenna and Cable Options:
 
 - N-Type
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| IPX to N-Type Female (10cm) | 2 | 3,7€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
+| IPX to N-Type Female (10cm) | 2 | 7,4€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
 | Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
 | Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
 
@@ -199,7 +195,7 @@ Antenna and Cable Options:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| UFL/IPX to SMA | 2 | 3,75€ | [AliExpress](https://s.click.aliexpress.com/e/_c4ltNPbF) | 10 cm |
+| UFL/IPX to SMA | 2 | 7,5€ | [AliExpress](https://s.click.aliexpress.com/e/_c4ltNPbF) | 10 cm |
 | 868MHz Antenna GIZONT 17cm SMA | 1 | 6,65€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
 | 433MHz Antenna GIZONT 4dBm SMA | 1 | 6,05€ | [AliExpress](https://pt.aliexpress.com/item/1005005382213254.html?spm=a2g0o.productlist.main.1.39dbsxfssxfsa2&algo_pvid=5ade51c1-efee-4c7c-829c-3de498bfd266&algo_exp_id=5ade51c1-efee-4c7c-829c-3de498bfd266-0&pdp_ext_f=%7B%22order%22%3A%2271%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%216.05%216.05%21%21%2146.67%2146.67%21%402103864c17797506007551770e25a3%2112000032827094565%21sea%21PT%21906403403%21X%211%210%21n_tag%3A-29919%3Bd%3Ad60e1a63%3Bm03_new_user%3A-29895&curPageLogUid=W2ixesLj7YaE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005382213254%7C_p_origin_prod%3A) | |
 
@@ -211,15 +207,15 @@ Antenna and Cable Options:
 | Vent Plug M5×0.8-7 IP67 |	1	| 2,76€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3Zf1mgR)	| |
 | Cable Gland M12 IP68	| 1	| 1,67	| [AliExpress](https://s.click.aliexpress.com/e/_c3XJinZH)	| Fits 3 – 6.5 mm cables |
 
-### Overall Cost
+### Aproximate Overall Cost
 
 #### 1. Base Costs (Required for both builds)
 
 These items are identical regardless of which antenna configuration you choose.
-- PCB & Board Components: €38.71
-- Essential Power Components (9W Solar Panel + 2x 21700 Cells): €26.90
-- Enclosure & Weatherproofing (Box, Vent Plug, Gland): €10.12
-  - Base Subtotal: €75.73
+ - All PCB Components: 39,21 €
+ - Other Essential Components (Solar + Batteries): 26,90 €
+ - Enclosure Components: 10,12 €
+   - Baseline Subtotal: 76,23 €
 
 #### 2. Overall Totals (Based on Antenna Options)
 
@@ -228,14 +224,14 @@ Because the antenna and cable options are mutually exclusive, your final total d
 ##### Option A: High-Gain N-Type Setup (Premium/Outdoor Heavy Duty)
 Best suited for permanent outdoor installations requiring robust, weatherproof connections and higher gain.
 
-- Antennas & Cables Cost: €43.70
-  - Estimated Total Cost: €119.43
+- Antennas & Cables Cost: €47.40
+  - Estimated Total Cost: €123.63
 
 ##### Option B: SMA Setup (Budget/Standard)
 Best suited for a compact layout or a lower-budget build.
 
-- Antennas & Cables Cost: €16.45
-  - Estimated Total Cost: €92.18
+- Antennas & Cables Cost: €20.20
+  - Estimated Total Cost: €96.43
 
 #### 💡 Additional Cost Factors to Consider:
 - Shipping Fees: Your parts are spread across three different platforms: GitHub/Gerber fabrication (PCBWay/JLCPCB), Amazon, NKON, and multiple stores on AliExpress. Expect an extra €10 – €20 in combined shipping fees.
