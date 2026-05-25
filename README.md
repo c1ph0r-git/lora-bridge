@@ -180,16 +180,22 @@ Other PCB assembly components:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-Antenna Cable UFL to SMA	1	2€	Aliexpress	10 cm female version
-GrandWisdom 868 MHz Antenna	1	3,40€	Aliexpress	SMA male connector
-5V Solar Panel	1	6,89€	Aliexpress	Claims 35 W, but not real
-Li-ion Battery 4400 mAh / 3.7 V	1	10€	Aliexpress	With PH2.0 connector and BMS (Battery Management System)
+| NIVIAN 9W 5V Solar Panel	| 1	| 6,89€	| Amazon |	|
+| 21700 Cell in Parallel (1S2P)	| 2 | NKON | Choose this or other reputable seller; e.g., Samsung 50E |
 
+Antenna and Cable Options:
 
-- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female (10cm)
-- 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
-- 5V Solar Panel: like NIVIAN 9W from Amazon
-- Battery: ~10,000mAh 
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| IPX to N-Type Female (10cm) | 2 | XX€ | Aliexpress | 10cm
+| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | Aliexpress | |
+| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | Aliexpress | | 
+
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| UFL/IPX to SMA | 1 | x€ | AliExpress | |
+| 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.aliexpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
+| 433MHz Antenna Rabbit-Labs or Ziisor 4dBm SMA | 1 | xx€ | AliExpress | |
 
 #### Enclosure (BOM)
 
