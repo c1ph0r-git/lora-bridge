@@ -268,14 +268,25 @@ If your board doesn’t include a bootloader, follow the official procedure link
 Once copied, the board will reboot automatically and start running the Meshtastic firmware.
 After this process, you’ll know your microcontroller is healthy and ready to integrate into the node.
 
-### Firmware Settings
-Both nrf52840 modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
+### Bridge Firmware Settings
 
+#### Meshtastic Bridge
+Both nrf52840 modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
 - For Module 1 (433 MHz)
 meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
 
 - For Module 2 (868 MHz)
 meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+
+#### Meshcore Bridge
+
+| PaActionrt | Command | Details | 
+| :----------- |:--------------|:--------------|  
+| get	| bridge.type	| Shows the configured bridge type (rs232, espnow or none). |
+| get/set	| bridge.enabled	| Enables or disables the bridge (on/off). Setting to "on" activates the bridge between the two devices. |
+| get/set	| bridge.delay	| Sets the delay in milliseconds for packet transmission through the bridge (valid values: 0-10000 ms). |
+| get/set	| bridge.source	| Sets the source of packets to transmit through the bridge. Use "rx" to retransmit received packets or "tx" to retransmit sent packets (logRx or logTx). |
+| get/set	| bridge.baud	| Sets the serial transmission speed for the RS232 bridge in baud (valid values: 9600-115200). |
 
 ---
 
