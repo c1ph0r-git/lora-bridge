@@ -259,9 +259,9 @@ RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are p
 Rep.
 ├── firmware/              # Bridge communication configs and node flash binaries
 ├── hardware/
-│   ├── pcb/               # KiCad schematics, layout design, and Gerber files
+│   ├── pcb/               # KiCad schematics, layout design, and Gerber files  
 │   └── enclosure/         # Faketec-style industrial 3D prints and step files
-├── docs/                  # Detailed assembly documentation and RF guidelines
+├── docs/                  # Detailed documentation and RF guidelines
 └── README.md              # Project overview
 ```
 
@@ -272,8 +272,8 @@ Contributions are heavily welcomed! If you are optimizing the RF trace filters f
 This project is licensed under the CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN OHL-S v2). You are free to copy, modify and distribute this design, provided you maintain identical licensing protections on any derivative works. See the LICENSE file for full conditions.
 
 ## Acknowledgments
-Heavily inspired by Daniel P. Costas' MASN Node.
+Heavily inspired by Daniel P. Costas' [MASN Node](https://danielpcostas.dev/masn-a-simple-and-open-source-solar-node-for-meshtastic/). 
 
-Bridging architecture concept derived from Meshcore Portugal (WSL3 Tutorials).
+Bridging architecture concept derived from Meshcore Portugal [(WSL3 Tutorials)](https://www.meshcore.pt/en/docs/tutorials/bridge-wsl3).
 
-Mechanical aesthetics adapted from Faketec node design.
+Mechanical aesthetics adapted from [Faketec](https://github.com/gargomoma/fakeTec_pcb) node design.
