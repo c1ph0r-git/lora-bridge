@@ -105,7 +105,7 @@ Core:
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
 - LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
 
-![promicro](images/ProMicroNRF52840_Foot.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
+![nrf](images/bom-promico-mcu-300x300.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
 
 Power:
 - Solar Charger: MPPT **CN3791** or **CN3065**
