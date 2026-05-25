@@ -193,7 +193,7 @@ N-Type
 SMA
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| UFL/IPX to SMA | 1 | x€ | [AliExpress]() | 10 cm |
+| UFL/IPX to SMA | 2 | x€ | [AliExpress]() | 10 cm |
 | 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
 | 433MHz Antenna Rabbit-Labs or Ziisor 4dBm SMA | 1 | xx€ | [AliExpress]() | |
 
