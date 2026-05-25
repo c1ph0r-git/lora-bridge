@@ -183,14 +183,14 @@ Other PCB assembly components:
 
 Antenna and Cable Options:
 
-N-Type
+- N-Type
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
 | Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
 | Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
 
-SMA
+- SMA
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | UFL/IPX to SMA | 2 | x€ | [AliExpress](https://s.click.aliexpress.com/e/_c4ltNPbF) | 10 cm |
