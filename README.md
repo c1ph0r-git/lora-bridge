@@ -121,10 +121,32 @@ Sensors:
 
 ![ina3221](images/bom-ina3221-current-sensor-300x300.webp) ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
-Other:
+Other PCB assembly components:
 - Solar panel and battery on-off switches
+ - SS12D10 Switches
 - User and Reset Buttons
-- Connectors for Solar Panel, Battery, and Antennas
+ - Push Buttons 3×6×5 mm
+- Connectors for Solar Panel and Battery: 
+ - 2P Screw Terminals for Battery/Solar
+ - 2P JST PH 2.0 mm Battery Connector
+- Headers: 
+ - 40-pin Straight Headers 2.54 mm
+ - 40-pin 90° Headers 2.54 mm
+
+
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+
+
+
+Antenna Cable UFL to SMA
+GrandWisdom 868 MHz Antenna
+5V Solar Panel
+Battery
+
 
 ### Bill of Materials (BOM)
 
