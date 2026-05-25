@@ -90,9 +90,8 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 
 ### Ordering the PCB - Gerber File
 
-You can order the PCB directly from JLCPCB or PCBWay (the design files are linked in the Bill of Materials).
-
-The process is very simple — just upload the provided files, choose your options, and place the order. 
+You can order the PCB directly from JLCPCB or PCBWay (the design files are linked below).
+Upload the provided files, choose your options, and place the order. 
 
 Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
@@ -127,10 +126,16 @@ Other:
 
 
 
+### Overall Cost
+
+
 
 ---
 
-## Firmware Settings
+## Firmware Setup - Before Assembly!
+
+
+### Firmware Settings
 Both modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
 
 - For Module 1 (433 MHz)
