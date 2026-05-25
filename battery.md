@@ -39,6 +39,6 @@ We calculate using an 80% usable capacity buffer.
 
 | Configuration | Total Capacity | Autonomy Estimate | Notes | 
 | :----------- |:---------------|:---------------|:---------------| 
-| 2x 21700 Cell in Parallel (1S2P) | 10,000 mAh | ~8 Days | Ultra-compact, fits well in small IP65 boxes. (e.g., Samsung 50E)|
-| 3x 18650 Cells in Parallel (1S3P) | 10,200 mAh | ~8 Days | Highly recommended for alpine or low-sun climates. (Panasonic NCR18650B). |
+| 2x 21700 Cell in Parallel (1S2P) | 10,000 mAh | ~8 Days | e.g., Samsung 50E |
+| 3x 18650 Cells in Parallel (1S3P) | 10,200 mAh | ~8 Days | e.g., Panasonic NCR18650B |
 
