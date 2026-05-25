@@ -66,7 +66,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 #### Interconnection & Bridge Configuration
 
-The Portuguese cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
+The cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
 
 ![promicro](images/ProMicroNRF52840_Foot.webp)
 
@@ -142,8 +142,8 @@ Other PCB assembly components:
 
 ### Hardware - Other Essencial Components
 
-- Antenna Cable UFL to SMA
-- GrandWisdom 868 MHz Antenna
+- Antenna Cable UFL to SMA (x2)
+- 433 and 868 MHz Antennas
 - 5V Solar Panel
 - Battery
 
