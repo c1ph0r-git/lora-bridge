@@ -161,49 +161,49 @@ Other PCB assembly components:
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
-| Promicro/NiceNano (NRF52840)	| 1	| 3€	| [AliExpress]()	| Choose wisely, some have bugs |
-| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
-| HT-RA62-LF 433 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
-| MPPT CN3065 Charger	| 1	| 2,20€	| [AliExpress]()	| |
-| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress]()	| Buy the purple one, not the black |
-| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress]()	| Choose 6-pin, 3.3 V version |
-| 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| [AliExpress]() | |	
-| 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | [AliExpress]()	| |
-| 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| [AliExpress]() | 	|
-| 2P JST PH 2.0 mm Battery Connector	| 1	| 1,62€ |	[AliExpress]() | |	
-| SS12D10 Switches	| 2	| 0,99€ |	[AliExpress]() | |	
-| Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress]()	| |
+| Promicro/NiceNano (NRF52840)	| 1	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
+| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
+| HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
+| MPPT CN3065 Charger	| 1	| 2,20€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| |
+| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3P3Ae4n)	| Buy the purple one, not the black |
+| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress](https://s.click.aliexpress.com/e/_c38NPPoB)	| Choose 6-pin, 3.3 V version |
+| 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| [AliExpress](https://s.click.aliexpress.com/e/_c3ZB55Dh) | |	
+| 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | [AliExpress](https://s.click.aliexpress.com/e/_c3QkxRBD)	| |
+| 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| [AliExpress](https://s.click.aliexpress.com/e/_c409fyTN) | 	|
+| 2P JST PH 2.0 mm Battery Connector	| 1	| 1,62€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3nteeKx) | |	
+| SS12D10 Switches	| 2	| 0,99€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3dBUABd) | |	
+| Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
 
 #### Other Essencial Components (BOM)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| NIVIAN 9W 5V Solar Panel	| 1	| 6,89€	| [Amazon]() |	|
-| 21700 Cell | 2 | XX€ | [NKON]() | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
+| NIVIAN 9W 5V Solar Panel	| 1	| 6,89€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
+| 21700 Cell | 2 | XX€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
 
 Antenna and Cable Options:
 
 N-Type
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress]() | 10cm |
-| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | [AliExpress]() | |
-| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | [AliExpress]() | | 
+| IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
+| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
+| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
 
 SMA
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| UFL/IPX to SMA | 2 | x€ | [AliExpress]() | 10 cm |
+| UFL/IPX to SMA | 2 | x€ | [AliExpress](https://s.click.aliexpress.com/e/_c4ltNPbF) | 10 cm |
 | 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
-| 433MHz Antenna Rabbit-Labs or Ziisor 4dBm SMA | 1 | xx€ | [AliExpress]() | |
+| 433MHz Antenna GIZONT 4dBm SMA | 1 | xx€ | [AliExpress](https://pt.aliexpress.com/item/1005005382213254.html?spm=a2g0o.productlist.main.1.39dbsxfssxfsa2&algo_pvid=5ade51c1-efee-4c7c-829c-3de498bfd266&algo_exp_id=5ade51c1-efee-4c7c-829c-3de498bfd266-0&pdp_ext_f=%7B%22order%22%3A%2271%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%216.05%216.05%21%21%2146.67%2146.67%21%402103864c17797506007551770e25a3%2112000032827094565%21sea%21PT%21906403403%21X%211%210%21n_tag%3A-29919%3Bd%3Ad60e1a63%3Bm03_new_user%3A-29895&curPageLogUid=W2ixesLj7YaE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005382213254%7C_p_origin_prod%3A) | |
 
 #### Enclosure (BOM)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Weatherproof Electrical Box 158×90×60mm IP65	| 1	| 5,69€ |	[AliExpress]() | |	
-| Vent Plug M5×0.8-7 IP67 |	1	| 2,76€ |	[AliExpress]()	| |
-| Cable Gland M12 IP68	| 1	| 1,67	| [AliExpress]()	| Fits 3 – 6.5 mm cables |
+| Weatherproof Electrical Box 158×90×60mm IP65	| 1	| 5,69€ |	[AliExpress](https://es.aliexpress.com/item/4000623518470.html) | |	
+| Vent Plug M5×0.8-7 IP67 |	1	| 2,76€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3Zf1mgR)	| |
+| Cable Gland M12 IP68	| 1	| 1,67	| [AliExpress](https://s.click.aliexpress.com/e/_c3XJinZH)	| Fits 3 – 6.5 mm cables |
 
 ### Overall Cost
 
@@ -258,6 +258,13 @@ PCB Population: Solder the passive solar components onto the main board followin
 RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are physically spaced apart at least 50 cm or oriented perpendicular to each other on the external mounting bracket to limit localized desensitization.
 
 ### Step by Step Assembly
+
+
+
+
+
+
+
 
 
 
