@@ -60,24 +60,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ## PCB Architecture
 
-### Schematic Diagram
-
-![schematic](/pcb/schematic/Schematic_LoraMesh-dual-band-(433-and-868MHz)_2026-05-25.png)
-
-#### Interconnection & Bridge Configuration
-
-The Portuguese cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
-
-##### UART Pinout Interconnect
-To set up the physical UART-1 bridge between the two nRf52840 modules (promicro or nice!nano), route the cross-over communication as follows:
-
-| Module 1 (433 MHz LF) | Module 2 (868 MHz HF) | Description |
-| :--- | :--- | :--- |
-| `TX` (Pin 3: P0.08) | `RX` (Pin 2: P0.06) | 433 MHz Traffic to 868 MHz Grid |
-| `RX` (Pin 2: P0.06) | `TX` (Pin 3: P0.08) | 868 MHz Traffic to 433 MHz Grid |
-| `GND` | `GND` | Common Ground Reference |
-
-### PCB Design a Layout
+### PCB Design and Layout
 
 ![pcb](images/pcb_top.svg) ![pcb](images/pcb_bottom.svg)
 
@@ -91,6 +74,25 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 You can order the PCB directly from JLCPCB or PCBWay (the design files are linked in the Bill of Materials).
 
 The process is very simple — just upload the provided files, choose your options, and place the order. 
+
+### Schematic Diagram
+
+![schematic](/pcb/schematic/Schematic_LoraMesh-dual-band-(433-and-868MHz)_2026-05-25.png)
+
+#### Interconnection & Bridge Configuration
+
+The Portuguese cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
+
+![promicro](images/ProMicroNRF52840_Foot.webp)
+
+#### UART Pinout Interconnect
+To set up the physical UART-1 bridge between the two nRf52840 modules (promicro or nice!nano), route the cross-over communication as follows:
+
+| Module 1 (433 MHz LF) | Module 2 (868 MHz HF) | Description |
+| :--- | :--- | :--- |
+| `TX` (Pin 3: P0.08) | `RX` (Pin 2: P0.06) | 433 MHz Traffic to 868 MHz Grid |
+| `RX` (Pin 2: P0.06) | `TX` (Pin 3: P0.08) | 868 MHz Traffic to 433 MHz Grid |
+| `GND` | `GND` | Common Ground Reference |
 
 ---
 
