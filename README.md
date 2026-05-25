@@ -48,7 +48,7 @@ Anyone approaching LoRa mesh networks usually finds the same thing: tutorials fu
 This PCB solves this by integrating everything into a single, compact design.
 
 A PCB anyone can assemble in a short amount of time, without microscopes nor messy wiring. The idea isn’t just to make it work, but to help you learn through the process. Building your own node gives you a deeper understanding of the Meshtastic / Meshcore ecosystem and lets you get the most out of it.
-
+ 
 ### Key Advantages
 - Uses only THT components, easy to solder.
 - Integrates all connections into the board — no messy wiring.
@@ -79,9 +79,9 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 
 ### PCB Design a Layout
 
-![pcb](images/pcb.png)
+![pcb](images/pcb_top.svg)
 
-![pcb](images/pcb-2.png)
+![pcb](images/pcb_bottom.svg)
 
 ### Dimensions and Mounting
 
