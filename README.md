@@ -97,9 +97,9 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 ---
 
-## Modules
+## Hardware Modules
 
-### Hardware - Main Components
+### Modules - Main Components
 
 Core:
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
@@ -108,23 +108,23 @@ Core:
 ![nrf](images/bom-promico-mcu-300x300.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
 
 Power:
-- Solar Charger: MPPT **CN3791** or **CN3065**
+- Solar Charger: MPPT **CN3791** or **CN3065** (recommended)
 
 ![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
 
 Sensors:
 - Current and Voltage Sensor: **INA3221** (three channels)
-  - Channel 1 (CH1): nodes & sensors.
-  - Channel 2 (CH2): output of the MPPT module.
-  - Channel 3 (CH3): solar panel.
-- Temperature and Humidity Sensor: **BME280**
+  - Channel 1 (CH1): nodes & sensors
+  - Channel 2 (CH2): output of the MPPT module
+  - Channel 3 (CH3): solar panel
+- Temperature and Humidity Sensor: **BME280** or **BMP280** (cheaper)
 
 ![ina3221](images/bom-ina3221-current-sensor-300x300.webp) ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
 Other PCB assembly components:
-- Solar panel and battery on-off switches
+- Solar panel and battery on-off switches:
   - SS12D10 Switches
-- User and Reset Buttons
+- User and Reset Buttons:
   - Push Buttons 3×6×5 mm
 - Connectors for Solar Panel and Battery: 
   - 2P Screw Terminals for Battery/Solar
@@ -142,8 +142,8 @@ Other PCB assembly components:
 
 ### Hardware - Other Essencial Components
 
-- Antenna Cable (x2): either UFL/IPX to SMA or IPX to N-Type Female
-- 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm
+- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female
+- 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
 - 5V Solar Panel: like NIVIAN 9W from Amazon
 - Battery: 
 
