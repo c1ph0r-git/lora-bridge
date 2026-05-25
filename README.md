@@ -145,7 +145,7 @@ Other PCB assembly components:
 - Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female
 - 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
 - 5V Solar Panel: like NIVIAN 9W from Amazon
-- Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
+- Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
 
 ### Hardware - Enclosure
 
@@ -158,32 +158,28 @@ Other PCB assembly components:
 
 ### Bill of Materials (BOM)
 
-| Left-Aligned | Center-Aligned | 
-| :----------- |:--------------:| 
-| This         | is             | 
-| aligned      | text           | 
-| example      | table          | 
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| Dual-Band PCB	| 1	| 5€	| Download	|  |
+| Promicro/NiceNano (NRF52840)	| 1	| 3€	| Aliexpress	| Choose wisely, some have bugs |
+| HT-RA62 LoRa Module |	2 |	13,8€ |	Aliexpress	| |
+| MPPT CN3065 Charger	| 1	| 2,20€	| Aliexpress	| |
+| INA3221 Current Sensor	| 1 |	1,72€ |	Aliexpress	| Buy the purple one, not the black |
+| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	Aliexpress	| Choose 6-pin, 3.3 V version |
+| 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| Aliexpress | |	
+| 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | Aliexpress	| |
+| 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| Aliexpress | 	|
+| 2P JST PH 2.0 mm Battery Connector	| 1	| 1,62€ |	Aliexpress | |	
+| SS12D10 Switches	| 2	| 0,99€ |	Aliexpress | |	
+| Push Buttons 3×6×5 mm	| 4	| 1,8€ |	Aliexpress	| |
 
-Part	Qty.	Cost	Source	Notes
-MASN HT-RA62 PCB	1	5€	Download	
-HT-RA62 LoRa Module	1	6,74€	Aliexpress	
 
-
-Part	Qty.	Cost	Source	Notes
-NiceNano (NRF52840)	1	3€	Aliexpress	Get the red PCB version
 Antenna Cable UFL to SMA	1	2€	Aliexpress	15 cm female version
 GrandWisdom 868 MHz Antenna	1	3,40€	Aliexpress	SMA male connector
 5V Solar Panel	1	6,89€	Aliexpress	Claims 35 W, but not real
-MPPT CN3791 Charger	1	2,20€	Aliexpress	Select the 6V version
-INA3221 Current Sensor	1	1,72€	Aliexpress	Buy the purple one, not the black
-BMP280 Temperature/Humidity Sensor	1	0,94€	Aliexpress	Choose 6-pin, 3.3 V version
+
+
 Li-ion Battery 4400 mAh / 3.7 V	1	10€	Aliexpress	With PH2.0 connector and BMS (Battery Management System)
-40-pin Straight Headers 2.54 mm	2	1,4€	Aliexpress	
-40-pin 90° Headers 2.54 mm	1		Aliexpress	
-2P JST PH 2.0 mm Battery Connector	1	1,62€	Aliexpress	
-Push Buttons 3×6×5 mm	2		Aliexpress	
-SS12D10 Switches	2	0,99€	Aliexpress	
-2P Screw Terminals for Battery/Solar	2	1,80€	Aliexpress	
 
 
 Part	Qty.	Cost	Source	Notes
