@@ -133,19 +133,21 @@ Other PCB assembly components:
   - 40-pin Straight Headers 2.54 mm
   - 40-pin 90° Headers 2.54 mm
 
+![SS12D10](images/bom-SS12D10-switch-300x300.webp) 
+![Buttons](images/bom-push-button-300x300.webp) 
+![Screw](images/bom-terminal-connector-300x300.webp) 
+![JST](images/bom-JST-PH2-battery-connector-300x300.webp) 
+![Straight](images/bom-pin-300x300.webp) 
+![Headers](images/bom-90-deg-pin-300x300.webp)
 
-![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
-![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
-![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
-![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
-![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+### Hardware - Other Essencial Components
+- Antenna Cable UFL to SMA
+- GrandWisdom 868 MHz Antenna
+- 5V Solar Panel
+- Battery
 
+### Hardware - Enclosure
 
-
-Antenna Cable UFL to SMA
-GrandWisdom 868 MHz Antenna
-5V Solar Panel
-Battery
 
 
 ### Bill of Materials (BOM)
