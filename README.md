@@ -209,8 +209,37 @@ Antenna and Cable Options:
 
 ### Overall Cost
 
-This gross estimate does not consider required time, solder iron, flux, solder, glue, galvanazing tape, capton tape, silicone, drill bits, brackets.
-Nor does it include shipping and VAT.
+1. Base Costs (Required for both builds)
+
+These items are identical regardless of which antenna configuration you choose.
+- PCB & Board Components: €38.71
+- Essential Power Components (9W Solar Panel + 2x 21700 Cells): €26.90
+- Enclosure & Weatherproofing (Box, Vent Plug, Gland): €10.12
+
+Base Subtotal: €75.73
+
+2. Overall Totals (Based on Antenna Options)
+
+Because the antenna and cable options are mutually exclusive, your final total depends entirely on whether you choose the rugged outdoor N-Type configuration or the more compact/budget-friendly SMA configuration.
+
+Option A: High-Gain N-Type Setup (Premium/Outdoor Heavy Duty)
+Best suited for permanent outdoor installations requiring robust, weatherproof connections and higher gain.
+
+- Antennas & Cables Cost: €43.70
+
+Estimated Total Cost: €119.43
+
+Option B: SMA Setup (Budget/Standard)
+Best suited for a compact layout or a lower-budget build.
+
+- Antennas & Cables Cost: €16.45
+
+Estimated Total Cost: €92.18
+
+💡 Additional Cost Factors to Consider:
+- Shipping Fees: Your parts are spread across three different platforms: GitHub/Gerber fabrication (PCBWay/JLCPCB), Amazon, NKON, and multiple stores on AliExpress. Expect an extra €10 – €20 in combined shipping fees.
+- AliExpress Choice/Shipping: If you combine the AliExpress items into a single cart, many items might qualify for free "Choice" shipping if you hit their minimum threshold.
+- Consumables: This estimate assumes you already have solder, flux, wires, and tools (soldering iron, hot glue/silicone for sealing) on hand.
 
 ---
 
