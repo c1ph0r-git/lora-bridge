@@ -141,6 +141,7 @@ Other PCB assembly components:
 ![Headers](images/bom-90-deg-pin-300x300.webp)
 
 ### Hardware - Other Essencial Components
+
 - Antenna Cable UFL to SMA
 - GrandWisdom 868 MHz Antenna
 - 5V Solar Panel
@@ -148,7 +149,12 @@ Other PCB assembly components:
 
 ### Hardware - Enclosure
 
-
+- Weatherproof Electrical Box 158×90×60mm IP65
+- Vent Plug M5×0.8-7 IP67
+- Cable Gland M12 IP68
+- Solar Panel Cable
+- Threaded Inserts M2.5×5 mm OD 3.5 mm
+- Screws M2.5×5 mm
 
 ### Bill of Materials (BOM)
 
