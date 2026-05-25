@@ -153,8 +153,6 @@ Other PCB assembly components:
 - Vent Plug M5×0.8-7 IP67
 - Cable Gland M12 IP68
 - Solar Panel Cable
-- Threaded Inserts M2.5×5 mm OD 3.5 mm
-- Screws M2.5×5 mm
 
 ### Bill of Materials (BOM)
 
@@ -163,52 +161,47 @@ Other PCB assembly components:
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | Dual-Band PCB	| 1	| 7€	| Download	|  |
-| Promicro/NiceNano (NRF52840)	| 1	| 3€	| Aliexpress	| Choose wisely, some have bugs |
-| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	Aliexpress	| |
-| HT-RA62-LF 433 LoRa |	1 |	6,74€ |	Aliexpress	| |
-| MPPT CN3065 Charger	| 1	| 2,20€	| Aliexpress	| |
-| INA3221 Current Sensor	| 1 |	1,72€ |	Aliexpress	| Buy the purple one, not the black |
-| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	Aliexpress	| Choose 6-pin, 3.3 V version |
-| 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| Aliexpress | |	
-| 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | Aliexpress	| |
-| 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| Aliexpress | 	|
-| 2P JST PH 2.0 mm Battery Connector	| 1	| 1,62€ |	Aliexpress | |	
-| SS12D10 Switches	| 2	| 0,99€ |	Aliexpress | |	
-| Push Buttons 3×6×5 mm	| 4	| 1,8€ |	Aliexpress	| |
+| Promicro/NiceNano (NRF52840)	| 1	| 3€	| [AliExpress]()	| Choose wisely, some have bugs |
+| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
+| HT-RA62-LF 433 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
+| MPPT CN3065 Charger	| 1	| 2,20€	| [AliExpress]()	| |
+| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress]()	| Buy the purple one, not the black |
+| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress]()	| Choose 6-pin, 3.3 V version |
+| 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| [AliExpress]() | |	
+| 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | [AliExpress]()	| |
+| 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| [AliExpress]() | 	|
+| 2P JST PH 2.0 mm Battery Connector	| 1	| 1,62€ |	[AliExpress]() | |	
+| SS12D10 Switches	| 2	| 0,99€ |	[AliExpress]() | |	
+| Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress]()	| |
 
 #### Other Essencial Components (BOM)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| NIVIAN 9W 5V Solar Panel	| 1	| 6,89€	| Amazon |	|
-| 21700 Cell in Parallel (1S2P)	| 2 | NKON | Choose this or other reputable seller; e.g., Samsung 50E |
+| NIVIAN 9W 5V Solar Panel	| 1	| 6,89€	| [Amazon]() |	|
+| 21700 Cell | 2 | XX€ | [NKON]() | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
 
 Antenna and Cable Options:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| IPX to N-Type Female (10cm) | 2 | XX€ | Aliexpress | 10cm
-| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | Aliexpress | |
-| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | Aliexpress | | 
+| IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress]() | 10cm
+| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | [AliExpress]() | |
+| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | [AliExpress]() | | 
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| UFL/IPX to SMA | 1 | x€ | AliExpress | |
-| 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.aliexpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
-| 433MHz Antenna Rabbit-Labs or Ziisor 4dBm SMA | 1 | xx€ | AliExpress | |
+| UFL/IPX to SMA | 1 | x€ | [AliExpress]() | |
+| 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
+| 433MHz Antenna Rabbit-Labs or Ziisor 4dBm SMA | 1 | xx€ | [AliExpress]() | |
 
 #### Enclosure (BOM)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-Part	Qty.	Cost	Source	Notes
-Weatherproof Electrical Box 158×90×60mm IP65	1	5,69€	Aliexpress	
-Vent Plug M5×0.8-7 IP67	1	2,76€	Aliexpress	
-Cable Gland M12 IP68	1	1,67	Aliexpress	Fits 3 – 6.5 mm cables
-Solar Panel Cable	1	–	–	Any you have on hand
-3D-Printed Mount for Battery & PCB	1		Download	Ask a friend with a 3D printer
-Threaded Inserts M2.5×5 mm OD 3.5 mm	4	2,34€	Aliexpress	
-Screws M2.5×5 mm	4	1,90€	Aliexpress	
+| Weatherproof Electrical Box 158×90×60mm IP65	| 1	| 5,69€ |	[AliExpress]() | |	
+| Vent Plug M5×0.8-7 IP67 |	1	| 2,76€ |	[AliExpress]()	| |
+| Cable Gland M12 IP68	| 1	| 1,67	| [AliExpress]()	| Fits 3 – 6.5 mm cables |
 
 ### Overall Cost
 
