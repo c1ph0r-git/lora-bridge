@@ -271,11 +271,11 @@ RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are p
 
 ## Future Improvements
 
-[] Decrease PCB size to a maximum of 100mm
-[] Include capacitors on LoRa modules and I2C lines
-[] Include capacitors and resistors on buttons to improve stability (avoid bouncing) and filter noise
-[] Include header for tft screen, buzzer, vibrator motor via mosfet circuit to decrease power consumption
-[] Include a battery maximum discharge protection circuit  
+- [] Decrease PCB size to a maximum of 100mm
+- [] Include capacitors on LoRa modules and I2C lines
+- [] Include capacitors and resistors on buttons to improve stability (avoid bouncing) and filter noise
+- [] Include header for tft screen, buzzer, vibrator motor via mosfet circuit to decrease power consumption
+- [] Include a battery maximum discharge protection circuit  
 
 ---
 
