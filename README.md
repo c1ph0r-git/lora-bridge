@@ -90,7 +90,7 @@ To set up the physical UART-1 bridge between the two nRf52840 modules (promicro 
 
 ### Ordering the PCB - Gerber File
 
-You can order the PCB directly from JLCPCB or PCBWay (the design files are linked below).
+You can order the PCB directly from **JLCPCB** or PCBWay (the design files are linked below).
 Upload the provided files, choose your options, and place the order. 
 
 Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
@@ -160,7 +160,7 @@ Other PCB assembly components:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Dual-Band PCB	| 1	| 7€	| Download	|  |
+| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber))	|  |
 | Promicro/NiceNano (NRF52840)	| 1	| 3€	| [AliExpress]()	| Choose wisely, some have bugs |
 | HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
 | HT-RA62-LF 433 LoRa |	1 |	6,74€ |	[AliExpress]()	| |
@@ -183,15 +183,17 @@ Other PCB assembly components:
 
 Antenna and Cable Options:
 
+N-Type
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress]() | 10cm
+| IPX to N-Type Female (10cm) | 2 | XX€ | [AliExpress]() | 10cm |
 | Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | XX€ | [AliExpress]() | |
 | Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | xX€ | [AliExpress]() | | 
 
+SMA
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| UFL/IPX to SMA | 1 | x€ | [AliExpress]() | |
+| UFL/IPX to SMA | 1 | x€ | [AliExpress]() | 10 cm |
 | 868MHz Antenna GIZONT 17cm SMA | 1 | xx€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
 | 433MHz Antenna Rabbit-Labs or Ziisor 4dBm SMA | 1 | xx€ | [AliExpress]() | |
 
@@ -212,6 +214,31 @@ Nor does it include shipping and VAT.
 
 ## Firmware Setup - Before Assembly!
 
+Before soldering anything, it’s a good idea to make sure the microcontroller works properly and boots without issues. This quick step helps you avoid problems later in the build.
+
+### Check or Update the Bootloader
+To install the Meshcore or Meshtastic firmware, your microcontroller must have a bootloader version 0.8 or higher. You can check it by following these steps:
+
+- Connect the NiceNano (NRF52840) board via USB.
+- Make two quick touches (using metal tweezers) between the RESET and GND pins (see reference photo below) to enter DFU mode.
+- Your computer will mount a USB drive named NICENANO or similar.
+- Check that the bootloader version is 0.8 or higher. You can verify this by opening the file INFO_UF2.TXT inside the USB drive that appears when entering DFU mode.
+- If it is inferior, copy the file update-nice_nano_bootloader-0.9.2_nosd.uf2 into the drive.
+- If you need another version, check the official repository.
+
+After copying, the board will automatically reboot (give it a few seconds).
+If your board doesn’t include a bootloader, follow the official procedure linked in the [bootloader guide](https://github.com/gargomoma/fakeTec_pcb?tab=readme-ov-file#my-promicro-is-dead-what-can-i-do).
+
+### Install the Firmware
+
+- Enter DFU mode (as explained above).
+- Open https://flasher.meshtastic.org or https://meshcore.co.uk/flasher.html. I recommend: [meshcore-lusofw](https://flasher.meshcore.pt/?_gl=1*1oh6xog*_ga*MTEzNDY1MDk0Ni4xNzc5MjI3NDg0*_ga_HF6KDP3ZSV*czE3Nzk3NDUzNjUkbzExJGcxJHQxNzc5NzQ1MzY3JGo1OCRsMCRoMTUwODUzODMxNg..)
+- Select the device NRF52 Pro-micro DIY / faketec.
+- Choose the latest stable version (or beta if you want to test new features).
+- Download the file and drag it into the DFU USB drive.
+
+Once copied, the board will reboot automatically and start running the Meshtastic firmware.
+After this process, you’ll know your microcontroller is healthy and ready to integrate into the node.
 
 ### Firmware Settings
 Both nrf52840 modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
