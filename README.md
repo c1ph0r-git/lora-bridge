@@ -123,15 +123,15 @@ Sensors:
 
 Other PCB assembly components:
 - Solar panel and battery on-off switches
- - SS12D10 Switches
+  - SS12D10 Switches
 - User and Reset Buttons
- - Push Buttons 3×6×5 mm
+  - Push Buttons 3×6×5 mm
 - Connectors for Solar Panel and Battery: 
- - 2P Screw Terminals for Battery/Solar
- - 2P JST PH 2.0 mm Battery Connector
+  - 2P Screw Terminals for Battery/Solar
+  - 2P JST PH 2.0 mm Battery Connector
 - Headers: 
- - 40-pin Straight Headers 2.54 mm
- - 40-pin 90° Headers 2.54 mm
+  - 40-pin Straight Headers 2.54 mm
+  - 40-pin 90° Headers 2.54 mm
 
 
 ![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
