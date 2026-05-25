@@ -223,8 +223,8 @@ To install the Meshcore or Meshtastic firmware, your microcontroller must have a
 - Make two quick touches (using metal tweezers) between the RESET and GND pins (see reference photo below) to enter DFU mode.
 - Your computer will mount a USB drive named NICENANO or similar.
 - Check that the bootloader version is 0.8 or higher. You can verify this by opening the file INFO_UF2.TXT inside the USB drive that appears when entering DFU mode.
-- If it is inferior, copy the file update-nice_nano_bootloader-0.9.2_nosd.uf2 into the drive.
-- If you need another version, check the official repository.
+  - If it is inferior, copy the file [update-nice_nano_bootloader-0.9.2_nosd.uf2](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/download/0.9.2/update-nice_nano_bootloader-0.9.2_nosd.uf2) into the drive.
+  - If you need another version, check the [official repository](https://github.com/adafruit/Adafruit_nRF52_Bootloader).
 
 After copying, the board will automatically reboot (give it a few seconds).
 If your board doesn’t include a bootloader, follow the official procedure linked in the [bootloader guide](https://github.com/gargomoma/fakeTec_pcb?tab=readme-ov-file#my-promicro-is-dead-what-can-i-do).
