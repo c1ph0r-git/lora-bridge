@@ -66,7 +66,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 #### Interconnection & Bridge Configuration
 
-The cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism between the two nrf52840 modules (nice!nano or promicro). Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary nrf52840 RX pin to be broadcasted instantly to the 868 MHz network.
+The cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism between the two nrf52840 modules (nice!nano or promicro). Packets originating from the low-frequency 433 MHz grid are received by the primary nice!nano/HT-RA62-LF, transmitted out its hardware TX pin, and injected natively into the secondary nice!nano/HT-RA62-HF RX pin to be broadcasted to the 868 MHz network.
 
 ![promicro](images/ProMicroNRF52840_Foot.webp)
 
@@ -298,10 +298,34 @@ RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are p
 
 ### Step by Step Assembly
 
+The physical assembly is straightforward if you follow the right order.
+The key is to prepare the modules first, then populate the PCB, and finally connect the antenna and power.
 
+#### Prepare the Modules
 
+Solder the pins to each module: 
+- the temperature sensor, 
+- the MPPT charger, 
+- the microcontroller, and 
+- the LoRa radio module.
 
+For the **INA3221**, follow these steps to solder the 90° pins on the channel side and add the SDA bridge.
 
+Step-by-step summary:
+
+1. Using the 90° header pins, cut three groups of three pins
+2. Remove the middle pin with tweezers
+3. Place the remaining pins in position
+4. Trim them so they only make contact with the pad
+5. Solder the pins onto the INA3221 channel pads
+6. Solder the SDA bridge
+
+![step1](images/internal-images-ina-1-300x300.webp) 
+![step2](images/internal-images-ina-2-300x300.webp) 
+![step3](images/internal-images-ina-3-300x300.webp) 
+![step4](images/internal-images-ina-4-300x300.webp) 
+![step5](images/internal-images-ina-5-300x300.webp) 
+![step6](images/internal-images-ina-6-300x300.webp) 
 
 
 
@@ -336,11 +360,15 @@ RF Separation Setup: Ensure that the 433 MHz and 868 MHz external antennas are p
 
 ```
 Rep.
-├── firmware/              # Bridge communication configs and node flash binaries
 ├── hardware/
 │   ├── pcb/               # KiCad schematics, layout design, and Gerber files  
-│   └── enclosure/         # Faketec-style industrial 3D prints and step files
+│   |   ├── schematic      # Schematic diagram
+│   |   └── gerber         # Gerber files
+│   └── enclosure/         # 3D print files and step files
 ├── docs/                  # Detailed documentation and RF guidelines
+│   ├── components         # Component specification sheets
+│   └── other
+├── images/                # Graphical resources used in this project
 └── README.md              # Project overview
 ```
 
@@ -356,3 +384,4 @@ Heavily inspired by Daniel P. Costas' [MASN Node](https://danielpcostas.dev/masn
 Bridging architecture concept derived from Meshcore Portugal [(WSL3 Tutorials)](https://www.meshcore.pt/en/docs/tutorials/bridge-wsl3).
 
 Mechanical aesthetics adapted from [Faketec](https://github.com/gargomoma/fakeTec_pcb) node design.
+
