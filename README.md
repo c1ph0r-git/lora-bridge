@@ -383,8 +383,8 @@ Recommendation: test any configuration change on a test node before applying it 
 ## Status LEDs and Indicators
 
 -  INA3221 Current Sensor
-  - `VS` ON Power is present on the board.
-  - `PV` ON The enabled channels are detecting valid voltage.
+   - `VS` ON Power is present on the board.
+   - `PV` ON The enabled channels are detecting valid voltage.
 
 More info: https://done.land/components/power/measuringcurrent/viashunt/ina3221/
 
