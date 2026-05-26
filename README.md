@@ -404,6 +404,8 @@ Recommendation: test any configuration change on a test node before applying it 
 ## Outdoor Enclosure
 To install the node outdoors, proper protection is essential.
 The enclosure must be weatherproof, sun-resistant, and allow for some ventilation to prevent condensation and excessive heat buildup.
+Interior temperatures can easily exceed 40 °C under direct sunlight.
+The enclosure doesn’t just protect against rain and dust — it’s also key to the node’s long-term durability. Spending a bit of time choosing and preparing it properly will make a big difference in the project’s lifespan.
 
 ### Choosing the Enclosure
 - Use an IP65 or higher electrical box. This is a common standard and provides enough protection against rain and dust.
@@ -419,48 +421,26 @@ The enclosure must be weatherproof, sun-resistant, and allow for some ventilatio
 - Vent plug: Prevents condensation buildup and balances internal air pressure.
 
 ### Thermal Management
-Interior temperatures can easily exceed 40 °C under direct sunlight.
-Painting the enclosure white or placing it in partial shade helps reduce heat.
-You can also add a small sun shield or mount it on a mast for natural ventilation.
-
-A practical idea: insulate the battery from the wall of the box that gets the most sunlight. You can use a thin foam sheet or a similar spacer. This keeps the battery cooler and extends its lifespan.
-
-The enclosure doesn’t just protect against rain and dust — it’s also key to the node’s long-term durability. Spending a bit of time choosing and preparing it properly will make a big difference in the project’s lifespan.
+- Painting the enclosure white
+- Placing it in partial shade helps reduce heat.
+- You can also add a small sun shield or mount it on a mast for natural ventilation.
+- Insulate the battery from the wall of the box that gets the most sunlight. You can use a thin foam sheet or a similar spacer. This keeps the battery cooler and extends its lifespan.
 
 ---
 
-Practical Details and Usage Tips
-A few practical details to keep in mind once your node is assembled:
-
-Legal Power Limits
+## Legal Power Limits
 Always respect your region’s regulations.
 In Europe, the applicable standard is ETSI EN 300-220, which limits the effective radiated power (EIRP). Using an antenna with too much gain could make your node non-compliant or illegal.
 
-Charging Current
-The battery used supports a maximum of 1 A. The MPPT charger can deliver up to 2 A, so you have two options:
+### Authorized Frequencies & Limits 
 
-Replace the MPPT shunt resistor with a 0.12 Ω (2512) one to limit the charging current.
-Use a solar panel that doesn’t exceed 1 A of output current.
-Nighttime Leakage
-The suggested CN3791 MPPT charger doesn’t include a blocking diode, so you’ll see a small negative current (~2 mA) flowing toward the panel at night. That equals about 24 mAh/day, or roughly 0.6% of a 4000 mAh battery — negligible in practical use.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Portugal falls under the European Telecommunications Standards Institute (ETSI) region. The legally permitted frequencies and parameters include:
+- `EU863-870 Band` (Primary): The standard band for LoRaWAN in Europe. Frequencies span 863 MHz to 870 MHz.
+  - Max Power: Generally limited to **25 mW ERP** (Effective Radiated Power).
+  - Duty Cycle: Strictly limited to **1% or 0.1% per channel**, depending on the specific sub-band (e.g., to prevent spectrum congestion).
+- `EU433 Band` (Secondary): Frequencies span **433.05 MHz to 434.79 MHz**.
+  - Max Power: Typically capped at **10 mW ERP**.
+  - Duty Cycle: Limited to **10%**.
 
 
 
