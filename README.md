@@ -228,6 +228,11 @@ Antenna and Cable Options:
 | Vent Plug M5×0.8-7 IP67 |	1	| 2,76€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3Zf1mgR)	| |
 | Cable Gland M12 IP68	| 1	| 1,67	| [AliExpress](https://s.click.aliexpress.com/e/_c3XJinZH)	| Fits 3 – 6.5 mm cables |
 
+Great 3D printed alternative:
+ - 3D printed design with support for dual antennas at **Printables**
+   - [MaxPTMeshBox 196mm](https://www.printables.com/model/1690735-lora-meshcore-meshtastic-solar-repeater-node-196mm)
+   - [MaxPTMeshBox 175mm](https://www.printables.com/model/1690729-lora-meshcore-meshtastic-solar-repeater-node-175mm)
+ 
 ### Aproximate Overall Cost
 
 #### 1. Base Costs (Required for both builds)
