@@ -417,6 +417,7 @@ The enclosure doesn’t just protect against rain and dust — it’s also key t
 ### Antenna
 - If you want to connect the antenna directly, you can mount the SMA connector on the top and the other on the bottom of the enclosure. 
 - However, it is prefered to use an external pigtail (N to N-type, f.e.) to the antenna, to keep the box in a shaded area and decrease internal temperature.
+- Bonus: if you have read this far and have issues with interference between 868 and 433MHz or other external sources, check out my [band pass filter](https://github.com/c1ph0r-git/lora-band-pass-filter).
 
 ### Connections
 - Cable glands: Essential for routing the solar panel cable while keeping the enclosure sealed.
