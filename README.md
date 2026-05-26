@@ -522,7 +522,23 @@ Rep.
 Contributions are heavily welcomed! If you are optimizing the RF trace filters for the HT-RA62 or improving the serial bridging packet structure, please feel free to open an Issue or submit a Pull Request.
 
 ## License
-This project is licensed under the CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN OHL-S v2). You are free to copy, modify and distribute this design, provided you maintain identical licensing protections on any derivative works. See the LICENSE file for full conditions.
+You are free to copy, modify and distribute this design, provided you maintain identical licensing protections on any derivative works. 
+This project is licensed under the CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN OHL-S v2). 
+See the [LICENSE](https://github.com/c1ph0r-git/lora-bridge/blob/main/LICENSE.txt) file for full conditions.
+
+This project includes several hardware and 3D model files, each with its own license:
+
+### CERN License
+The PCB design files are original creations developed and designed for this project. 
+These files are licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2).
+
+This license allows you to:
+ - Use the hardware design for any purpose
+ - Study how the hardware works
+ - Modify the design to suit your needs
+ - Share copies of the original or modified design
+
+The "Strongly Reciprocal" condition means that if you distribute products based on this design, you must also share any modifications under the same license, ensuring the hardware remains open.
 
 ## Acknowledgments
 Heavily inspired by Daniel P. Costas' [MASN Node](https://danielpcostas.dev/masn-a-simple-and-open-source-solar-node-for-meshtastic/). 
