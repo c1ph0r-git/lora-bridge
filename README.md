@@ -382,27 +382,22 @@ Recommendation: test any configuration change on a test node before applying it 
 
 ## Status LEDs and Indicators
 
--  INA3221 Current Sensor
-   - `VS` ON Power is present on the board.
-   - `PV` ON The enabled channels are detecting valid voltage.
+- INA3221 Current Sensor
+  - `VS` ON Power is present on the board.
+  - `PV` ON The enabled channels are detecting valid voltage.
+  - [More info](https://done.land/components/power/measuringcurrent/viashunt/ina3221/)
 
-More info: https://done.land/components/power/measuringcurrent/viashunt/ina3221/
+- MPPT CN3791 Charger
+  - No light No sunlight or the panel isn’t providing power.
+  - `Solid red` Charging.
+  - `Solid blue` Battery fully charged.
+  - `Fast red` blinking Battery not detected.
+  - More info about the CN3791: [Datasheet](https://www.laskakit.cz/user/related_files/dse-cn3791-2.pdf)
 
-### MPPT CN3791 Charger
-
-- No light No sunlight or the panel isn’t providing power.
-- `Solid red` Charging.
-- `Solid blue` Battery fully charged.
-- `Fast red` blinking Battery not detected.
-
-More info about the CN3791: [Datasheet](https://www.laskakit.cz/user/related_files/dse-cn3791-2.pdf)
-
-## NRF52840 Microcontroller
-
-- `Flashing red` The board is powered and running correctly.
-- `Flashing blue` The board is comunicating via bluetooth 
-
-Note: some cheap PCBs haves these colors switched around.
+- NRF52840 Microcontroller
+  - `Flashing red` The board is powered and running correctly.
+  - `Flashing blue` The board is comunicating via bluetooth 
+  - Note: some cheap PCBs haves these colors switched around.
 
 --- 
 
