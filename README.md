@@ -165,7 +165,7 @@ Other PCB assembly components:
 | HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
 | HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
 | MPPT CN3065 Charger	| 1	| 2,20€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| |
-| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3P3Ae4n)	| Buy the purple one, not the black |
+| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3P3Ae4n)	| Buy the purple one, not the black. New design where all three IN+ pins are NOT connected |
 | BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress](https://s.click.aliexpress.com/e/_c38NPPoB)	| Choose 6-pin, 3.3 V version |
 | 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| [AliExpress](https://s.click.aliexpress.com/e/_c3ZB55Dh) | |	
 | 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | [AliExpress](https://s.click.aliexpress.com/e/_c3QkxRBD)	| |
@@ -240,7 +240,7 @@ Best suited for a compact layout or a lower-budget build.
 
 ---
 
-## Firmware Setup - Before Assembly!
+## Setup - Before Assembly!
 
 Before soldering anything, it’s a good idea to make sure the microcontroller works properly and boots without issues. This quick step helps you avoid problems later in the build.
 
@@ -267,26 +267,6 @@ If your board doesn’t include a bootloader, follow the official procedure link
 
 Once copied, the board will reboot automatically and start running the Meshtastic firmware.
 After this process, you’ll know your microcontroller is healthy and ready to integrate into the node.
-
-### Bridge Firmware Settings
-
-#### Meshtastic Bridge
-Both nrf52840 modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
-- For Module 1 (433 MHz)
-meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
-
-- For Module 2 (868 MHz)
-meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
-
-#### Meshcore Bridge
-
-| PaActionrt | Command | Details | 
-| :----------- |:--------------|:--------------|  
-| get	| bridge.type	| Shows the configured bridge type (rs232, espnow or none). |
-| get/set	| bridge.enabled	| Enables or disables the bridge (on/off). Setting to "on" activates the bridge between the two devices. |
-| get/set	| bridge.delay	| Sets the delay in milliseconds for packet transmission through the bridge (valid values: 0-10000 ms). |
-| get/set	| bridge.source	| Sets the source of packets to transmit through the bridge. Use "rx" to retransmit received packets or "tx" to retransmit sent packets (logRx or logTx). |
-| get/set	| bridge.baud	| Sets the serial transmission speed for the RS232 bridge in baud (valid values: 9600-115200). |
 
 ---
 
@@ -336,29 +316,14 @@ Remove any factory electronics (LEDs, regulators, etc.) to avoid unnecessary pow
 Wire the pair of wires to the terminals and always identify positive and negative — ideally using different wire colors.
 Check these notes on [solar panel placement in Portugal](https://github.com/c1ph0r-git/lora-bridge/blob/main/solar_panel.md).
 
+### Connect Antenna and Power
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Connect Antenna and Power
 ⚠️ Never power on the node without an antenna connected. You could burn the LoRa module.
 
-Connect the antenna before powering the system.
-Connect the battery.
-Connect the solar panel (preferably covered while doing so).
-After these steps, your node hardware will be fully assembled and ready for configuration.
-
+- Connect the antenna before powering the system.
+- Connect the battery.
+- Connect the solar panel (preferably covered while doing so).
+- After these steps, your node hardware will be fully assembled and ready for configuration.
 
 ---
 
@@ -371,6 +336,59 @@ After these steps, your node hardware will be fully assembled and ready for conf
 ⚠️ If soldering header pins on the LoRa module, make sure the antenna connector doesn’t touch pin 1 (RF output). When mounted directly to the PCB as SMD, this issue doesn’t occur.
 
 ---
+
+## Basic Configuration
+With the hardware ready, it’s time to power up the node (by switching on the toggles) and check that it communicates correctly. For this, we’ll use the Meshtastic or Meshcore app, available for Android and iOS. You can also use the web version if you prefer.
+
+- Connect to the node via Bluetooth using the app (default PIN: 123456).
+- Set the region of use and frequency (433 or 868Mhz).
+- Assign a new Bluetooth PIN for future connections (and make sure to write it down).
+- Give your node a name (4 characters) — this will be its identifier on the mesh network. For Meshcore in Portugal it is highly recommended to use the [online configurator](https://www.meshcore.pt/en/tools/configurator) to select a compatible and standard name to be mapped in Meshcore Portugal. 
+- In the Telemetry section, enable Power and Environment. This will start transmitting data such as temperature, pressure, current, and voltage.
+
+After saving the changes, the node will begin sending telemetry and will automatically join the network. From the app, you can now check coverage, neighboring nodes, and power consumption.
+
+### Bridge Firmware Settings
+
+#### Meshtastic Bridge
+Both nrf52840 modules must be configured using the Meshtastic CLI or App to allow serial module pass-through framing:
+- For Module 1 (433 MHz)
+meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+
+- For Module 2 (868 MHz)
+meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode TEXTMSG
+
+#### Meshcore Bridge
+
+| Action | Command | Details | 
+| :----------- |:--------------|:--------------|  
+| get	| bridge.type	| Shows the configured bridge type (rs232, espnow or none). |
+| get/set	| bridge.enabled	| Enables or disables the bridge (on/off). Setting to "on" activates the bridge between the two devices. |
+| get/set	| bridge.delay	| Sets the delay in milliseconds for packet transmission through the bridge (valid values: 0-10000 ms). |
+| get/set	| bridge.source	| Sets the source of packets to transmit through the bridge. Use "rx" to retransmit received packets or "tx" to retransmit sent packets (logRx or logTx). |
+| get/set	| bridge.baud	| Sets the serial transmission speed for the RS232 bridge in baud (valid values: 9600-115200). |
+
+## Remote Control (Remote Admin)
+If you plan to leave the node in a remote or hard-to-access location, it’s a good idea to configure it for remote administration. This allows you to change parameters from another node (through the mesh) without needing to plug in a cable or travel to the site.
+
+- Go to the Admin Messages menu and add the private key of one or more of your nodes.
+- From that point on, you’ll be able to send configuration commands remotely. These are transmitted as encrypted messages through the mesh network.
+- By default, for security reasons, nodes only accept commands via USB, Bluetooth, or TCP.
+- When you enable this option, you expand control capabilities — but use it with caution.
+
+Recommendation: test any configuration change on a test node before applying it to a remote one. That way, you avoid locking yourself out or making the node inaccessible.
+
+---
+
+
+
+
+
+
+
+
+
+--- 
 
 ## Future Improvements
 
