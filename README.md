@@ -380,7 +380,25 @@ Recommendation: test any configuration change on a test node before applying it 
 
 ---
 
+## Status LEDs and Indicators
 
+### INA3221 Current Sensor
+
+`VS` ON Power is present on the board.
+`PV` ON The enabled channels are detecting valid voltage.
+More info: https://done.land/components/power/measuringcurrent/viashunt/ina3221/
+
+- MPPT CN3791 Charger
+
+No light No sunlight or the panel isn’t providing power.
+Solid red Charging.
+Solid blue Battery fully charged.
+Fast red blinking Battery not detected.
+More info about the CN3791: Datasheet
+
+NRF52840 Microcontroller
+
+Flashing red The board is powered and running correctly.
 
 
 
