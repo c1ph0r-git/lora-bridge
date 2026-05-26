@@ -66,12 +66,12 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 #### Interconnection & Bridge Configuration
 
-The cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism. Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary HT-RA62's RX pin to be broadcasted instantly to the 868 MHz network.
+The cross-frequency bridging architecture utilizes a bidirectional Serial/UART passthrough mechanism between the two nrf52840 modules (nice!nano or promicro). Packets originating from the low-frequency 433 MHz grid are received by the primary HT-RA62, transmitted out its hardware TX pin, and injected natively into the secondary nrf52840 RX pin to be broadcasted instantly to the 868 MHz network.
 
 ![promicro](images/ProMicroNRF52840_Foot.webp)
 
 #### UART Pinout Interconnect
-To set up the physical UART-1 bridge between the two nRf52840 modules (promicro or nice!nano), route the cross-over communication as follows:
+To set up the physical **UART-1** bridge between the two nRf52840 modules (promicro or nice!nano), route the cross-over communication as follows:
 
 | Module 1 (433 MHz LF) | Module 2 (868 MHz HF) | Description |
 | :--- | :--- | :--- |
