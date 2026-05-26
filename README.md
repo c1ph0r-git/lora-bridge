@@ -334,7 +334,7 @@ Add the buttons, switches, and connectors in their positions.
 #### Prepare the Solar Panel
 Remove any factory electronics (LEDs, regulators, etc.) to avoid unnecessary power drain.
 Wire the pair of wires to the terminals and always identify positive and negative — ideally using different wire colors.
-Check these notes on [solar panel placement in Portugal]().
+Check these notes on [solar panel placement in Portugal](https://github.com/c1ph0r-git/lora-bridge/blob/main/solar_panel.md).
 
 
 
