@@ -198,8 +198,9 @@ Battery:
 
 - Aim for about 10.000mAh
 - Prefer LiFePO4 for better heat resistance
-- Prefer a battery that includes a protection circuit or buy the suggested external circuit for LFP
-- Go with either 18650 size (most used) or 21700 (larger, more capacity, less cells, runs cooler)
+- Prefer a battery that includes a protection circuit (more expensive) or buy the suggested external circuit for LFP
+- Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
+- Choose the battery support accordingly. Please note that protected batteries sometimes do not fit in standard enclosures.
 
 Antenna and Cable Options:
 
