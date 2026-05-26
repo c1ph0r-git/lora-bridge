@@ -368,7 +368,7 @@ meshtastic --set serial.enabled true --set serial.baud B115200 --set serial.mode
 | get/set	| bridge.source	| Sets the source of packets to transmit through the bridge. Use "rx" to retransmit received packets or "tx" to retransmit sent packets (logRx or logTx). |
 | get/set	| bridge.baud	| Sets the serial transmission speed for the RS232 bridge in baud (valid values: 9600-115200). |
 
-## Remote Control (Remote Admin)
+### Remote Control (Remote Admin)
 If you plan to leave the node in a remote or hard-to-access location, it’s a good idea to configure it for remote administration. This allows you to change parameters from another node (through the mesh) without needing to plug in a cable or travel to the site.
 
 - Go to the Admin Messages menu and add the private key of one or more of your nodes.
@@ -384,21 +384,89 @@ Recommendation: test any configuration change on a test node before applying it 
 
 ### INA3221 Current Sensor
 
-`VS` ON Power is present on the board.
-`PV` ON The enabled channels are detecting valid voltage.
+- `VS` ON Power is present on the board.
+- `PV` ON The enabled channels are detecting valid voltage.
+
 More info: https://done.land/components/power/measuringcurrent/viashunt/ina3221/
 
-- MPPT CN3791 Charger
+### MPPT CN3791 Charger
 
-No light No sunlight or the panel isn’t providing power.
-Solid red Charging.
-Solid blue Battery fully charged.
-Fast red blinking Battery not detected.
-More info about the CN3791: Datasheet
+- No light No sunlight or the panel isn’t providing power.
+- `Solid red` Charging.
+- `Solid blue` Battery fully charged.
+- `Fast red` blinking Battery not detected.
 
-NRF52840 Microcontroller
+More info about the CN3791: [Datasheet](https://www.laskakit.cz/user/related_files/dse-cn3791-2.pdf)
 
-Flashing red The board is powered and running correctly.
+## NRF52840 Microcontroller
+
+- `Flashing red` The board is powered and running correctly.
+- `Flashing blue` The board is comunicating via bluetooth 
+
+Note: some cheap PCBs haves these colors switched around.
+
+--- 
+
+## Outdoor Enclosure
+To install the node outdoors, proper protection is essential.
+The enclosure must be weatherproof, sun-resistant, and allow for some ventilation to prevent condensation and excessive heat buildup.
+
+### Choosing the Enclosure
+- Use an IP65 or higher electrical box. This is a common standard and provides enough protection against rain and dust.
+- The recommended size is 158×90×60 mm, although it depends on your battery and connector layout.
+- Material: PVC or ABS. If possible, choose a UV-resistant version.
+
+### Antenna
+- If you want to connect the antenna directly, you can mount the SMA connector on the top and the other on the bottom of the enclosure. 
+- However, it is prefered to use an external pigtail (N to N-type, f.e.) to the antenna, to keep the box in a shaded area and decrease internal temperature.
+
+### Connections
+- Cable glands: Essential for routing the solar panel cable while keeping the enclosure sealed.
+- Vent plug: Prevents condensation buildup and balances internal air pressure.
+
+### Thermal Management
+Interior temperatures can easily exceed 40 °C under direct sunlight.
+Painting the enclosure white or placing it in partial shade helps reduce heat.
+You can also add a small sun shield or mount it on a mast for natural ventilation.
+
+A practical idea: insulate the battery from the wall of the box that gets the most sunlight. You can use a thin foam sheet or a similar spacer. This keeps the battery cooler and extends its lifespan.
+
+The enclosure doesn’t just protect against rain and dust — it’s also key to the node’s long-term durability. Spending a bit of time choosing and preparing it properly will make a big difference in the project’s lifespan.
+
+---
+
+Practical Details and Usage Tips
+A few practical details to keep in mind once your node is assembled:
+
+Legal Power Limits
+Always respect your region’s regulations.
+In Europe, the applicable standard is ETSI EN 300-220, which limits the effective radiated power (EIRP). Using an antenna with too much gain could make your node non-compliant or illegal.
+
+Charging Current
+The battery used supports a maximum of 1 A. The MPPT charger can deliver up to 2 A, so you have two options:
+
+Replace the MPPT shunt resistor with a 0.12 Ω (2512) one to limit the charging current.
+Use a solar panel that doesn’t exceed 1 A of output current.
+Nighttime Leakage
+The suggested CN3791 MPPT charger doesn’t include a blocking diode, so you’ll see a small negative current (~2 mA) flowing toward the panel at night. That equals about 24 mAh/day, or roughly 0.6% of a 4000 mAh battery — negligible in practical use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -413,6 +481,7 @@ Flashing red The board is powered and running correctly.
 - [x] Decrease PCB size to a maximum of 100mm
 - [x] Include capacitors on LoRa modules and I2C lines
 - [x] Include capacitors and resistors on buttons to improve stability (avoid bouncing) and filter noise
+- [x] Include diodes to decrease negative current loss
 - [x] Include header for tft screen, buzzer, vibrator motor via mosfet circuit to decrease power consumption
 - [x] Include a battery maximum discharge protection circuit  
 
