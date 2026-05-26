@@ -327,11 +327,37 @@ Step-by-step summary:
 ![step5](images/internal-images-ina-5-300x300.webp) 
 ![step6](images/internal-images-ina-6-300x300.webp) 
 
+#### Populate the PCB
+Place the modules on the board. You can choose to use female sockets (to make modules swappable) or solder them directly to the PCB.
+Add the buttons, switches, and connectors in their positions.
+
+#### Prepare the Solar Panel
+Remove any factory electronics (LEDs, regulators, etc.) to avoid unnecessary power drain.
+Wire the pair of wires to the terminals and always identify positive and negative — ideally using different wire colors.
+Check these notes on [solar panel placement in Portugal]().
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+Connect Antenna and Power
+⚠️ Never power on the node without an antenna connected. You could burn the LoRa module.
+
+Connect the antenna before powering the system.
+Connect the battery.
+Connect the solar panel (preferably covered while doing so).
+After these steps, your node hardware will be fully assembled and ready for configuration.
 
 
 ---
