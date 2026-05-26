@@ -438,15 +438,56 @@ Portugal falls under the European Telecommunications Standards Institute (ETSI) 
 - `EU863-870 Band` (Primary): The standard band for LoRaWAN in Europe. Frequencies span 863 MHz to 870 MHz.
   - Max Power: Generally limited to **25 mW ERP** (Effective Radiated Power).
   - Duty Cycle: Strictly limited to **1% or 0.1% per channel**, depending on the specific sub-band (e.g., to prevent spectrum congestion).
+
 - `EU433 Band` (Secondary): Frequencies span **433.05 MHz to 434.79 MHz**.
   - Max Power: Typically capped at **10 mW ERP**.
   - Duty Cycle: Limited to **10%**.
 
+In Portugal, deploying a LoRA mesh network falls under the regulatory framework of ANACOM (Autoridade Nacional de Comunicações). Because LoRa operates in unlicensed frequency bands, there is no requirement to obtain an individual radio station license, provided your equipment adheres strictly to the rules governing SRDs (Dispositivos de curta distância / Short Range Devices) outlined in Portugal's QNAF (Quadro Nacional de Atribuição de Frequências).
 
+While Portuguese legislation doesn't explicitly regulate the "mesh" network topology itself, it tightly regulates the radio spectrum and behavior of the devices within that mesh.
 
+#### 1. Core Frequency Bands & Power Limits
+Most European and Portuguese LoRa/Mesh deployments operate within the 863–870 MHz bands. According to ANACOM's current SRD decisions (aligned with EU Decision 2019/1345), the primary limits are:
 
+| Frequency Sub-band | Max Output Power (e.r.p.) | Duty Cycle Limit (or Mitigation) | 
+| :----------- |:--------------|:--------------|  
+| 865.00 – 868.00 MHz | 25 mW (+14 dBm) | 1% duty cycle |
+| 868.00 – 868.60 MHz | 25 mW (+14 dBm) | 1% duty cycle (or LBT/AFA spectrum access) | 
+| 868.70 – 869.20 MHz | 25 mW (+14 dBm) | 0.1% duty cycle (or LBT/AFA) | 
+| 869.40 – 869.65 MHz | 500 mW (+27 dBm) | 10% duty cycle (or LBT/AFA) | 
 
+The 500 mW Exception: The 869.40–869.65 MHz window allows for higher power (500 mW), which is incredibly useful for longer-range backhaul links in a mesh network, but you must respect the stricter 10% duty cycle restriction.
 
+#### 2. The "Mesh" Hurdle: Duty Cycle & LBT
+The single biggest legal hurdle for running a LoRa mesh network in Portugal is the Duty Cycle limit.
+
+- The Rule: Standard sub-bands restrict a single radio device to transmitting only 1% of the time (e.g., 36 seconds per hour).
+
+- The Mesh Problem: In a mesh network, central or "router" nodes do not just transmit their own data; they repeat packet traffic for surrounding nodes. In a busy mesh network, a routing node can easily break the 1% legal duty cycle limit.
+
+Legal Workarounds:
+To remain strictly compliant with ANACOM guidelines, your mesh nodes must utilize alternative spectrum access techniques if they exceed standard duty cycles:
+
+- LBT (Listen Before Talk): The device scans the channel before transmitting. If the channel is clear, it can transmit.
+
+- AFA (Adaptive Frequency Agility): The device dynamically hops across channels to spread out the transmission load.
+
+If your hardware utilizes a robust implementation of LBT and AFA, the strict 1% time ceiling is legally relaxed under ANACOM's SRD frameworks, preventing your routing nodes from violating the law.
+
+#### 3. CE Marking and Equipment Compliance
+Any LoRa equipment (be it an off-the-shelf gateway, a Meshtastic device, or a custom PCB) deployed commercially or publicly in Portugal must comply with the EU Radio Equipment Directive (RED) 2014/53/EU.
+
+- Devices must carry a legitimate CE mark.
+
+- Custom or DIY hardware built for personal, amateur use generally operates in a legal grey area as long as it conforms to the strict SRD power and frequency criteria, but it cannot be sold commercially without full RED certification.
+
+#### 4. Encryption and Privacy Considerations
+If your LoRa mesh network is being used to route telemetry, IoT sensor data, or messaging (such as private Meshtastic/Meshcore grids):
+
+- No Open Telecom Rules: Because you are operating on unlicensed spectrum as a private entity or hobbyist, you are generally not classified as a public electronic communications provider under Portugal’s Lei das Comunicações Eletrónicas (LCE).
+
+- GDPR Compliance: If your mesh network transmits personal data (like unencrypted GPS coordinates or identifiable messages) across public spaces, you must ensure compliance with GDPR (RGPD in Portugal), meaning data encryption by default is highly recommended to prevent unauthorized interception.
 
 --- 
 
