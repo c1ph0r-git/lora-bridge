@@ -17,7 +17,7 @@ This is a prototype board under development. I take no responsability for its mi
 
 ## About
 
-**Lora-Bridge** is an open-source, community-driven, solar-powered dual-band LoRa relay node. It merges the elegant architecture design of the **MASN** (Meshtastic Autonomous Solar Node) with a **Faketec-inspired** design and a hardware-integrated **dual-band cross-frequency bridge** system. 
+**Lora-Bridge** is an open-source, community-driven, solar-powered dual-band LoRa relay node. It merges the elegant architecture design of the **[MASN](https://danielpcostas.dev/masn-a-simple-and-open-source-solar-node-for-meshtastic/)** (Meshtastic Autonomous Solar Node) with a **[Faketec](https://github.com/gargomoma/fakeTec_pcb)-inspired** design and a hardware-integrated **dual-band cross-frequency bridge** system. 
 
 Unlike standard single-frequency nodes, this design bridges the gap between distinct Meshtastic/Meshcore networks by establishing a local hardware **UART bridge** between two dedicated **LoRa** nodes: one operating on **433 MHz (LF)** and the other on **868 MHz (HF)**.
 
@@ -32,7 +32,7 @@ Using this repeater bridge, client nodes can use either frequency to access the 
 - **Solar Core Power Path:** Complete MPPT solar charging circuit optimized for high efficiency during low-light winter days, integrated with comprehensive over-current and over-charge protections for Lithium batteries.
 - **Low Power Consumption:** The nRF52840 MCU of the promicro / nice!nano boards has a very low power consumption, ideal for a solar design.
 - **Sensor Integration and Telemetry:** This design integrates voltage/current sensor for the solar panel, battery and load, as well as enviromental sensor for temperature and humidity inside the enclosure. 
-- **Faketec-Style Mechanical Design:** Extremely ruggedized layout featuring a specialized chassis and high-clearance placement. Easy to DIY.
+- **User-Friendly Mechanical Design:** Extremely ruggedized layout featuring a specialized chassis and high-clearance placement. Easy to DIY.
 - **Minimal RF Internal Interference:** Dedicated isolated internal paths and shielding preventing cross-harmonic desensitization between the co-located 433 MHz and 868 MHz tracks.
 - **Modular Design:** this design choice makes it great to test different components in a clean framework.
 - **Price:** this PCB is based around easily available and cheap modules.
@@ -176,6 +176,8 @@ Other PCB assembly components:
 
 #### Other Essencial Components (BOM)
 
+Solar panel and Battery:
+
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
@@ -316,7 +318,7 @@ Remove any factory electronics (LEDs, regulators, etc.) to avoid unnecessary pow
 Wire the pair of wires to the terminals and always identify positive and negative — ideally using different wire colors.
 Check these notes on [solar panel placement in Portugal](https://github.com/c1ph0r-git/lora-bridge/blob/main/solar_panel.md).
 
-### Connect Antenna and Power
+#### Connect Antenna and Power
 
 ⚠️ Never power on the node without an antenna connected. You could burn the LoRa module.
 
