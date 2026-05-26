@@ -62,7 +62,7 @@ A PCB anyone can assemble in a short amount of time, without microscopes nor mes
 
 ### Schematic Diagram
 
-![schematic](/pcb/schematic/Schematic_LoraMesh-dual-band-(433-and-868MHz)_2026-05-25.png)
+![schematic](/pcb/schematic/Schematic_LoraMesh-dual-band-(433-and-868MHz)_2026-05-26.png)
 
 #### Interconnection & Bridge Configuration
 
