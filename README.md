@@ -221,6 +221,7 @@ Protection circuit:
 #### Charger and Battery Setup Options:
 
 - Li-On:
+
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
@@ -230,6 +231,7 @@ Protection circuit:
 | 18650 Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
 
 - LiFePO4:
+
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | 6V Solar Panel | 1 | ~10-20€ | | |
