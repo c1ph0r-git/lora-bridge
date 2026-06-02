@@ -176,14 +176,14 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 ![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
 
-Solar panel:
+#### Solar panel:
 - 5V Solar Panel: like NIVIAN 9W from Amazon
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
 
-Solar Charger:
+#### Solar Charger:
 - Solar Charger: 
     - No MPTT: **CN3791** (switching charger for LiFePO4 version) or **TP5000** (switching charger for LiFePO4)
     - Fixed MPPT: **CN3791** (switching charger Li-ON version) or **CN3065** (linear charger for Li-ON)
@@ -201,7 +201,7 @@ Solar Charger:
 | MPPT CN3791 Charger	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
 | TP5000 Charger	| 1	| 1,60€	| [AliExpress](https://pt.aliexpress.com/item/1005009339731648.html)	| better for LFP batteries. no MPPT |
 
-Battery:
+#### Battery:
 - Size: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md) 
 - Chemistry: Prefer LiFePO4 for better heat resistance
 - Package: Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
@@ -214,7 +214,7 @@ Battery:
 | Li-On 21700 Samsung INR21700-50E 4900mAh - 9.8A | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
 | LiFePO4 18650 Haidi HDCF18650 2000mAh - 6A LifePO4 - 3.2V | 4 | 4€ | [NKON](https://www.nkon.nl/pt/rechargeable/lifepo4/hadi-hdcf18650-2000mah-6a-lifepo4-3-2v.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9hnwsJqhWPsc5Uc2zhvoKdkC&gclid=CjwKCAjwidXQBhAZEiwA4egw6P4zMptkk_lApvuTiQ7u2OD_QG35tJ-p2i1sh8t8Hjit5pa9MyQ5mRoCCI8QAvD_BwE) | Better heat resistance |
 
-Protection circuit:
+#### Protection circuit:
 - Unprotected batteries should have an overdischarge protection (other protection circuits like overcharge is included in the charger)
 - Choose voltage according to battery selection (3.2V for LiFePO4; 3.7V for Li-ON)
 
@@ -268,7 +268,6 @@ Antenna and Cable Options:
 - Weatherproof Electrical Box 158×90×60mm IP65
 - Vent Plug M5×0.8-7 IP67
 - Cable Gland M12 IP68
-- Solar Panel Cable
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
