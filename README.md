@@ -155,11 +155,29 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 | Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
 
 ### Power:
-- Solar Charger: MPPT **CN3791** or **CN3065** or **TP5000**
-- 5V Solar Panel: like NIVIAN 9W from Amazon
-- Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
 
 ![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
+
+Solar panel:
+- 5V Solar Panel: like NIVIAN 9W from Amazon
+
+Solar Charger:
+- Solar Charger: 
+    - Switch converter: **TP5000**
+    - Fixed MPPT: **CN3791** or **CN3065** 
+
+Battery:
+- Battery: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
+- Prefer LiFePO4 for better heat resistance
+- Prefer a battery that includes a protection circuit (more expensive) or buy the suggested external circuit for LFP
+- Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
+- Choose the battery support accordingly. Please note that protected batteries sometimes do not fit in standard enclosures.
+
+Charger and Battery Options:
+
+- Li-On:
+
+- LiFePO4:
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
@@ -171,12 +189,6 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 | LiFePO4 18650 Haidi HDCF18650 2000mAh - 6A LifePO4 - 3.2V | 4 | 4€ | [NKON](https://www.nkon.nl/pt/rechargeable/lifepo4/hadi-hdcf18650-2000mah-6a-lifepo4-3-2v.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9hnwsJqhWPsc5Uc2zhvoKdkC&gclid=CjwKCAjwidXQBhAZEiwA4egw6P4zMptkk_lApvuTiQ7u2OD_QG35tJ-p2i1sh8t8Hjit5pa9MyQ5mRoCCI8QAvD_BwE) | Better heat resistance |
 | LFP BMS 1S 3.2V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
 | 18650 Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
-
-- Aim for about 10.000mAh
-- Prefer LiFePO4 for better heat resistance
-- Prefer a battery that includes a protection circuit (more expensive) or buy the suggested external circuit for LFP
-- Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
-- Choose the battery support accordingly. Please note that protected batteries sometimes do not fit in standard enclosures.
 
 ### Hardware - Other Essencial Components
 
