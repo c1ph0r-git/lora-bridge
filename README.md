@@ -179,6 +179,10 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 Solar panel:
 - 5V Solar Panel: like NIVIAN 9W from Amazon
 
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
+
 Solar Charger:
 - Solar Charger: 
     - No MPTT: **CN3791** (switching charger for LiFePO4 version) or **TP5000** (switching charger for LiFePO4)
@@ -186,10 +190,16 @@ Solar Charger:
 
 | Solar Charger Module | Charger Type | Input Voltage Range | Max Charging Current | Solar Panel (Vmp) | Target Battery Chemistry |
 | :----------- |:--------------|:--------------|:--------------|:--------------|:--------------|  
-| CN3791 (LiFePO4) | Buck (Switching) | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
-| TP5000 (LiFePO4) | Buck (Switching) | 4.5 - 9V (7V max recommended) | Up to 2A (Modules default to 1A) | 5V to 6V solar panels | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
-| CN3791 (Li-Ion) | Buck (Switching) | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A) | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell Li-Ion / LiPo (3.7V nom / 4.2V peak) | 
-| CN3065 (Li-Ion) | Linear | 4.4 - 6V | Up to 1A (Highly heat-restricted) | Strictly 4.5V to 5.5V solar panels | Single-cell Li-Ion / LiPo (3.7V nom / 4.2V peak) |
+| CN3791 (LiFePO4) | Switching | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
+| TP5000 (LiFePO4) | Switching | 4.5 - 9V (7V max) | Up to 2A (Modules default to 1A) | 5V to 6V solar panels | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
+| CN3791 (Li-Ion) | Switching | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A) | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell Li-Ion (3.7V nom / 4.2V peak) | 
+| CN3065 (Li-Ion) | Linear | 4.4 - 6V | Up to 1A (Highly heat-restricted) | Strictly 4.5V to 5.5V solar panels | Single-cell Li-Ion (3.7V nom / 4.2V peak) |
+
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
+| MPPT CN3791 Charger	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
+| TP5000 Charger	| 1	| 1,60€	| [AliExpress](https://pt.aliexpress.com/item/1005009339731648.html)	| better for LFP batteries. no MPPT |
 
 Battery:
 - Size: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md) 
@@ -198,19 +208,32 @@ Battery:
 - Protection: verify if the battery includes a protection circuit (more expensive) or buy the suggested external circuit
 - Choose the battery support accordingly. Please note that protected batteries sometimes do not fit in standard enclosures.
 
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| Li-On 18650 Samsung INR18650-35E 3400mAh | 3 | ~9€ | [NKON](https://www.nkon.nl/pt/samsung-inr18650-35e-3400mah-8a-z-tag.html) 
+| Li-On 21700 Samsung INR21700-50E 4900mAh - 9.8A | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
+| LiFePO4 18650 Haidi HDCF18650 2000mAh - 6A LifePO4 - 3.2V | 4 | 4€ | [NKON](https://www.nkon.nl/pt/rechargeable/lifepo4/hadi-hdcf18650-2000mah-6a-lifepo4-3-2v.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9hnwsJqhWPsc5Uc2zhvoKdkC&gclid=CjwKCAjwidXQBhAZEiwA4egw6P4zMptkk_lApvuTiQ7u2OD_QG35tJ-p2i1sh8t8Hjit5pa9MyQ5mRoCCI8QAvD_BwE) | Better heat resistance |
+
+Protection circuit:
+- Unprotected batteries should have an overdischarge protection (other protection circuits like overcharge is included in the charger)
+- Choose voltage according to battery selection (3.2V for LiFePO4; 3.7V for Li-ON)
+
 #### Charger and Battery Setup Options:
 
 - Li-On:
-
-- LiFePO4:
-
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
-| MPPT CN3791 Charger	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
-| TP5000 Charger	| 1	| 1,60€	| [AliExpress](https://pt.aliexpress.com/item/1005009339731648.html)	| better for LFP batteries. no MPPT |
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
-| Li-On 21700 Samsung INR21700-50E 4900mAh - 9.8A | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
+| MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
+| Li-On 18650 Samsung INR18650-35E 3400mAh | 3 | ~9€ | [NKON](https://www.nkon.nl/pt/samsung-inr18650-35e-3400mah-8a-z-tag.html) 
+| LFP BMS 1S 3.7V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
+| 18650 Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
+
+- LiFePO4:
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| 6V Solar Panel | 1 | ~10-20€ | | |
+| CN3791 Charger 6V LiFePO4	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
 | LiFePO4 18650 Haidi HDCF18650 2000mAh - 6A LifePO4 - 3.2V | 4 | 4€ | [NKON](https://www.nkon.nl/pt/rechargeable/lifepo4/hadi-hdcf18650-2000mah-6a-lifepo4-3-2v.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9hnwsJqhWPsc5Uc2zhvoKdkC&gclid=CjwKCAjwidXQBhAZEiwA4egw6P4zMptkk_lApvuTiQ7u2OD_QG35tJ-p2i1sh8t8Hjit5pa9MyQ5mRoCCI8QAvD_BwE) | Better heat resistance |
 | LFP BMS 1S 3.2V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
 | 18650 Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
