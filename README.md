@@ -177,11 +177,11 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 ![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
 
 #### Solar panel:
-- 5V Solar Panel: like NIVIAN 9W from Amazon
+- 5V Solar Panel: like NIVIAN 9W from Amazon. 
 - 1A max current for most chargers
 - Theoretical Power Required: 5 Watts (5V times 1A).
 - Minimum Practical Panel Rating: 7 Watts (Provides 5W only under perfect, intense midday sun).
-- Ideal Panel Rating: 10W to 14W (Ensures reliable 1A charging even in hazy or indirect sunlight)
+- Ideal Panel Rating: 10W to 14W (Ensures reliable 1A charging even in hazy or indirect sunlight).
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
@@ -189,8 +189,8 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 #### Solar Charger:
 - Solar Charger: 
-    - No MPTT: **CN3791** (switching charger for LiFePO4 version) or **TP5000** (switching charger for LiFePO4)
-    - Fixed MPPT: **CN3791** (switching charger Li-ON version) or **CN3065** (linear charger for Li-ON)
+    - No MPTT: **TP5000** (switching charger for LiFePO4)
+    - Fixed MPPT: **CN3791** (switching charger with Li-ON or LiFePO4 versions) or **CN3065** (linear charger for Li-ON, less current used by the circuit, more efficient in these low power applications)
 
 | Solar Charger Module | Charger Type | Input Voltage Range | Max Charging Current | Solar Panel (Vmp) | Target Battery Chemistry |
 | :----------- |:--------------|:--------------|:--------------|:--------------|:--------------|  
