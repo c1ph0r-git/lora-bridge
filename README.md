@@ -122,14 +122,14 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 | HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
 
 #### Sensors:
-- Current and Voltage Sensor: **INA3221** (three channels)
+- Current and Voltage Sensor: **INA3221** (three channels). I2C: 0x40: A0 connected to GND (Default)
   - Channel 1 (CH1): nodes & sensors
   - Channel 2 (CH2): output of the MPPT module
   - Channel 3 (CH3): solar panel
 
 ![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
 
-- Temperature and Humidity Sensor: **BME280** or **BMP280** (cheaper)
+- Temperature and Humidity Sensor: **BME280** or **BMP280** (cheaper). I2C: 0x76 (Default)
 
 ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
