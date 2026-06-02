@@ -154,7 +154,7 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 | SS12D10 Switches	| 2	| 0,99€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3dBUABd) | |	
 | Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
 
-#### Power:
+### Power:
 - Solar Charger: MPPT **CN3791** or **CN3065** or **TP5000**
 - 5V Solar Panel: like NIVIAN 9W from Amazon
 - Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
