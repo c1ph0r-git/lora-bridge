@@ -126,9 +126,12 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
   - Channel 1 (CH1): nodes & sensors
   - Channel 2 (CH2): output of the MPPT module
   - Channel 3 (CH3): solar panel
+
+![ina3221](images/bom-ina3221-current-sensor-300x300.webp) 
+
 - Temperature and Humidity Sensor: **BME280** or **BMP280** (cheaper)
 
-![ina3221](images/bom-ina3221-current-sensor-300x300.webp) ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
+![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
@@ -138,19 +141,25 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 #### Other PCB assembly components:
 - Solar panel and battery on-off switches:
   - SS12D10 Switches
+
+![SS12D10](images/bom-SS12D10-switch-300x300.webp) 
+
 - User and Reset Buttons:
   - Push Buttons 3×6×5 mm
+
+![Buttons](images/bom-push-button-300x300.webp) 
+
 - Connectors for Solar Panel and Battery: 
   - 2P Screw Terminals for Battery/Solar
   - 2P JST PH 2.0 mm Battery Connector
+
+![Screw](images/bom-terminal-connector-300x300.webp) 
+![JST](images/bom-JST-PH2-battery-connector-300x300.webp) 
+
 - Headers: 
   - 40-pin Straight Headers 2.54 mm
   - 40-pin 90° Headers 2.54 mm
 
-![SS12D10](images/bom-SS12D10-switch-300x300.webp) 
-![Buttons](images/bom-push-button-300x300.webp) 
-![Screw](images/bom-terminal-connector-300x300.webp) 
-![JST](images/bom-JST-PH2-battery-connector-300x300.webp) 
 ![Straight](images/bom-pin-300x300.webp) 
 ![Headers](images/bom-90-deg-pin-300x300.webp)
 
@@ -172,17 +181,24 @@ Solar panel:
 
 Solar Charger:
 - Solar Charger: 
-    - Switch converter: **TP5000**
-    - Fixed MPPT: **CN3791** or **CN3065** 
+    - No MPTT: **CN3791** (switching charger for LiFePO4 version) or **TP5000** (switching charger for LiFePO4)
+    - Fixed MPPT: **CN3791** (switching charger Li-ON version) or **CN3065** (linear charger for Li-ON)
+
+| Solar Charger Module | Charger Type | Input Voltage Range | Max Charging Current | Solar Panel (Vmp) | Target Battery Chemistry |
+| :----------- |:--------------|:--------------|:--------------|:--------------|:--------------|  
+| CN3791 (LiFePO4) | Buck (Switching) | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
+| TP5000 (LiFePO4) | Buck (Switching) | 4.5 - 9V (7V max recommended) | Up to 2A (Modules default to 1A) | 5V to 6V solar panels | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
+| CN3791 (Li-Ion) | Buck (Switching) | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A) | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell Li-Ion / LiPo (3.7V nom / 4.2V peak) | 
+| CN3065 (Li-Ion) | Linear | 4.4 - 6V | Up to 1A (Highly heat-restricted) | Strictly 4.5V to 5.5V solar panels | Single-cell Li-Ion / LiPo (3.7V nom / 4.2V peak) |
 
 Battery:
-- Battery: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
-- Prefer LiFePO4 for better heat resistance
-- Prefer a battery that includes a protection circuit (more expensive) or buy the suggested external circuit for LFP
-- Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
+- Size: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md) 
+- Chemistry: Prefer LiFePO4 for better heat resistance
+- Package: Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
+- Protection: verify if the battery includes a protection circuit (more expensive) or buy the suggested external circuit
 - Choose the battery support accordingly. Please note that protected batteries sometimes do not fit in standard enclosures.
 
-Charger and Battery Options:
+#### Charger and Battery Setup Options:
 
 - Li-On:
 
