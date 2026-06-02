@@ -305,7 +305,7 @@ Example:
 | Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
 | MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
-| Li-On 21700 Samsung INR21700-50E 4900mAh - 9.8A | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
+| Li-On 18650 Samsung INR18650-35E 3400mAh | 3-4 | 9~12€ | [NKON](https://www.nkon.nl/pt/samsung-inr18650-35e-3400mah-8a-z-tag.html) 
 | BMS 1S 3.7V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
 | Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
 | IPX to N-Type Female (10cm) | 2 | 7,4€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
