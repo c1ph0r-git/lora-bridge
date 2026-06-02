@@ -108,9 +108,11 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 #### Core:
 
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
+
 ![nrf](images/bom-promico-mcu-300x300.webp) 
 
 - LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
+
 ![lora](images/ht-ra62-hf-lora-300x300.webp)
 
 | Part | Qty. | Cost | Source | Notes | 
