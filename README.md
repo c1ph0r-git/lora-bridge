@@ -95,24 +95,29 @@ Upload the provided files, choose your options, and place the order.
 
 Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
+
 ---
 
 ## Hardware Modules
 
 ### Modules - Main Components
 
-Core:
+#### Core:
 - MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
 - LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
 
 ![nrf](images/bom-promico-mcu-300x300.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
 
-Power:
-- Solar Charger: MPPT **CN3791** or **CN3065** or **TP5000**
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| Promicro/NiceNano (NRF52840)	| 2	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
+| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
+| HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
 
-![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
-
-Sensors:
+#### Sensors:
 - Current and Voltage Sensor: **INA3221** (three channels)
   - Channel 1 (CH1): nodes & sensors
   - Channel 2 (CH2): output of the MPPT module
@@ -121,7 +126,7 @@ Sensors:
 
 ![ina3221](images/bom-ina3221-current-sensor-300x300.webp) ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
-Other PCB assembly components:
+#### Other PCB assembly components:
 - Solar panel and battery on-off switches:
   - SS12D10 Switches
 - User and Reset Buttons:
@@ -140,32 +145,8 @@ Other PCB assembly components:
 ![Straight](images/bom-pin-300x300.webp) 
 ![Headers](images/bom-90-deg-pin-300x300.webp)
 
-### Hardware - Other Essencial Components
-
-- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female (10cm)
-- 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
-- 5V Solar Panel: like NIVIAN 9W from Amazon
-- Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
-
-### Hardware - Enclosure
-
-- Weatherproof Electrical Box 158×90×60mm IP65
-- Vent Plug M5×0.8-7 IP67
-- Cable Gland M12 IP68
-- Solar Panel Cable
-
-### Bill of Materials (BOM)
-
-#### All PCB Components (BOM)
-
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
-| Promicro/NiceNano (NRF52840)	| 2	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
-| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
-| HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
-| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3P3Ae4n)	| Buy the purple one, not the black. New design where all three IN+ pins are NOT connected |
-| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress](https://s.click.aliexpress.com/e/_c38NPPoB)	| Choose 6-pin, 3.3 V version |
 | 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| [AliExpress](https://s.click.aliexpress.com/e/_c3ZB55Dh) | |	
 | 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | [AliExpress](https://s.click.aliexpress.com/e/_c3QkxRBD)	| |
 | 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| [AliExpress](https://s.click.aliexpress.com/e/_c409fyTN) | 	|
@@ -173,24 +154,19 @@ Other PCB assembly components:
 | SS12D10 Switches	| 2	| 0,99€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3dBUABd) | |	
 | Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
 
-Charger (choose one depending on the battery choice):
+#### Power:
+- Solar Charger: MPPT **CN3791** or **CN3065** or **TP5000**
+- 5V Solar Panel: like NIVIAN 9W from Amazon
+- Battery: ~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md)  
+
+![cn3791](images/bom-cn3791-solar-charger-300x300.webp) 
+
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
 | MPPT CN3791 Charger	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
 | TP5000 Charger	| 1	| 1,60€	| [AliExpress](https://pt.aliexpress.com/item/1005009339731648.html)	| better for LFP batteries. no MPPT |
-
-#### Other Essencial Components (BOM)
-
-Solar panel:
-
-| Part | Qty. | Cost | Source | Notes | 
-| :----------- |:--------------|:--------------|:--------------|:--------------|  
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
-
-Battery:
-| Part | Qty. | Cost | Source | Notes | 
-| :----------- |:--------------|:--------------|:--------------|:--------------|  
 | Li-On 21700 Samsung INR21700-50E 4900mAh - 9.8A | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
 | LiFePO4 18650 Haidi HDCF18650 2000mAh - 6A LifePO4 - 3.2V | 4 | 4€ | [NKON](https://www.nkon.nl/pt/rechargeable/lifepo4/hadi-hdcf18650-2000mah-6a-lifepo4-3-2v.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9hnwsJqhWPsc5Uc2zhvoKdkC&gclid=CjwKCAjwidXQBhAZEiwA4egw6P4zMptkk_lApvuTiQ7u2OD_QG35tJ-p2i1sh8t8Hjit5pa9MyQ5mRoCCI8QAvD_BwE) | Better heat resistance |
 | LFP BMS 1S 3.2V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
@@ -201,6 +177,11 @@ Battery:
 - Prefer a battery that includes a protection circuit (more expensive) or buy the suggested external circuit for LFP
 - Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
 - Choose the battery support accordingly. Please note that protected batteries sometimes do not fit in standard enclosures.
+
+### Hardware - Other Essencial Components
+
+- Antenna Cables: either UFL/IPX to SMA or IPX to N-Type Female (10cm)
+- 433 and 868 MHz Antennas: recommend Ziisor 4.5 dBi 40cm (N-Type) or other 
 
 Antenna and Cable Options:
 
@@ -220,7 +201,12 @@ Antenna and Cable Options:
 | 868MHz Antenna GIZONT 17cm SMA | 1 | 6,65€ | [AliExpress](https://pt.AliExpress.com/item/1005004607615001.html?gatewayAdapt=usa2bra4itemAdapt) | | 
 | 433MHz Antenna GIZONT 4dBm SMA | 1 | 6,05€ | [AliExpress](https://pt.aliexpress.com/item/1005005382213254.html?spm=a2g0o.productlist.main.1.39dbsxfssxfsa2&algo_pvid=5ade51c1-efee-4c7c-829c-3de498bfd266&algo_exp_id=5ade51c1-efee-4c7c-829c-3de498bfd266-0&pdp_ext_f=%7B%22order%22%3A%2271%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%216.05%216.05%21%21%2146.67%2146.67%21%402103864c17797506007551770e25a3%2112000032827094565%21sea%21PT%21906403403%21X%211%210%21n_tag%3A-29919%3Bd%3Ad60e1a63%3Bm03_new_user%3A-29895&curPageLogUid=W2ixesLj7YaE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005382213254%7C_p_origin_prod%3A) | |
 
-#### Enclosure (BOM)
+### Hardware - Enclosure
+
+- Weatherproof Electrical Box 158×90×60mm IP65
+- Vent Plug M5×0.8-7 IP67
+- Cable Gland M12 IP68
+- Solar Panel Cable
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
@@ -233,6 +219,34 @@ Great 3D printed alternative:
    - [MaxPTMeshBox 196mm](https://www.printables.com/model/1690735-lora-meshcore-meshtastic-solar-repeater-node-196mm)
    - [MaxPTMeshBox 175mm](https://www.printables.com/model/1690729-lora-meshcore-meshtastic-solar-repeater-node-175mm)
  
+### Bill of Materials (BOM)
+
+#### All PCB Components (BOM)
+
+Example:
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
+| Promicro/NiceNano (NRF52840)	| 2	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
+| HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
+| HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
+| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3P3Ae4n)	| Buy the purple one, not the black. New design where all three IN+ pins are NOT connected |
+| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress](https://s.click.aliexpress.com/e/_c38NPPoB)	| Choose 6-pin, 3.3 V version |
+| 40-pin Straight Headers 2.54 mm	| 4	| 2,8€	| [AliExpress](https://s.click.aliexpress.com/e/_c3ZB55Dh) | |	
+| 40-pin 90° Headers 2.54 mm	| 1	|	0,7€ | [AliExpress](https://s.click.aliexpress.com/e/_c3QkxRBD)	| |
+| 2P Screw Terminals for Battery/Solar	| 2	| 1,80€	| [AliExpress](https://s.click.aliexpress.com/e/_c409fyTN) | 	|
+| 2P JST PH 2.0 mm Battery Connector	| 1	| 1,62€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3nteeKx) | |	
+| SS12D10 Switches	| 2	| 0,99€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3dBUABd) | |	
+| Push Buttons 3×6×5 mm	| 4	| 1,8€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4XbWmcn)	| |
+| MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
+| NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
+| Li-On 21700 Samsung INR21700-50E 4900mAh - 9.8A | 2 | 6,9€ | [NKON](https://www.nkon.nl/pt/samsung-inr21700-50e.html?gad_source=1&gad_campaignid=23652912424&gbraid=0AAAAAD1QO9g04P4toLP5hj_jOnpLJvxCV&gclid=CjwKCAjw5s_QBhAdEiwADD_gBuJ4lsvDNiuXfjM8iktb3I-3MBCmvP_CPqv2Wldf3MfIbKZ2bOK6GxoCZesQAvD_BwE) | Choose this or other reputable seller; e.g., Samsung 50E in Parallel (1S2P)	 |
+| LFP BMS 1S 3.7V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
+| Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
+| IPX to N-Type Female (10cm) | 2 | 7,4€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
+| Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
+| Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
+
 ### Aproximate Overall Cost
 
 #### 1. Base Costs (Required for both builds)
