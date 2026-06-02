@@ -126,6 +126,11 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 ![ina3221](images/bom-ina3221-current-sensor-300x300.webp) ![bme](images/bom-bme-250-env-sensor-300x300.webp) 
 
+| Part | Qty. | Cost | Source | Notes | 
+| :----------- |:--------------|:--------------|:--------------|:--------------|  
+| INA3221 Current Sensor	| 1 |	1,72€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3P3Ae4n)	| Buy the purple one, not the black. New design where all three IN+ pins are NOT connected |
+| BMP280 Temperature/Humidity Sensor	| 1	| 0,94€ |	[AliExpress](https://s.click.aliexpress.com/e/_c38NPPoB)	| Choose 6-pin, 3.3 V version |
+
 #### Other PCB assembly components:
 - Solar panel and battery on-off switches:
   - SS12D10 Switches
