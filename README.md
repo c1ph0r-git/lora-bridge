@@ -97,7 +97,7 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
+| Dual-Band PCB	| 5	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
 
 ---
 
@@ -291,7 +291,7 @@ Great 3D printed alternative:
 Example:
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| Dual-Band PCB	| 1	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
+| Dual-Band PCB	| 5	| 7€	| [Download](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)	|  |
 | Promicro/NiceNano (NRF52840)	| 2	| 3€	| [AliExpress](https://s.click.aliexpress.com/e/_c3VgzUcP)	| Choose wisely, some have bugs |
 | HT-RA62-HF 868 LoRa |	1 |	6,74€ |	[AliExpress](https://s.click.aliexpress.com/e/_c4D8xHEr)	| |
 | HT-RA62-LF 433 LoRa |	1 |	7,4€ |	[AliExpress](https://pt.aliexpress.com/item/1005008363549136.html?spm=a2g0o.cart.0.0.58147f06CXfFX1&mp=1&pdp_npi=6%40dis%21EUR%21EUR+15.02%21EUR+7.21%21%21EUR+7.21%21%21%21%402103877917797499637216927e0e47%2112000045246654815%21ct%21PT%21906403403%21%213%210%21&gatewayAdapt=glo2bra)	| |
