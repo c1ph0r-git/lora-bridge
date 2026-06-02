@@ -106,10 +106,12 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 ### Modules - Main Components
 
 #### Core:
-- MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
-- LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
 
-![nrf](images/bom-promico-mcu-300x300.webp) ![lora](images/ht-ra62-hf-lora-300x300.webp)
+- MCU: Nice!Nano v2 or ProMicro (**NRF52840**)
+![nrf](images/bom-promico-mcu-300x300.webp) 
+
+- LoRa Transceiver modules: **HT-RA62 HF** for 868 MHz and **HT-RA62 LF** for 433 MHz (**SX1262**).
+![lora](images/ht-ra62-hf-lora-300x300.webp)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
@@ -263,6 +265,9 @@ Example:
 | IPX to N-Type Female (10cm) | 2 | 7,4€ | [AliExpress](https://s.click.aliexpress.com/e/_c4tSgaXn) | 10cm |
 | Ziisor 433Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c4mnh5ZR) | |
 | Ziisor 868Mhz 4.5dBi 40cm (N-Type) | 1 | 20€ | [AliExpress](https://s.click.aliexpress.com/e/_c3misLtn) | | 
+| Weatherproof Electrical Box 158×90×60mm IP65	| 1	| 5,69€ |	[AliExpress](https://es.aliexpress.com/item/4000623518470.html) | |	
+| Vent Plug M5×0.8-7 IP67 |	1	| 2,76€ |	[AliExpress](https://s.click.aliexpress.com/e/_c3Zf1mgR)	| |
+| Cable Gland M12 IP68	| 1	| 1,67	| [AliExpress](https://s.click.aliexpress.com/e/_c3XJinZH)	| Fits 3 – 6.5 mm cables |
 
 ### Aproximate Overall Cost
 
