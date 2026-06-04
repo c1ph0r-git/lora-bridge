@@ -206,7 +206,7 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 | TP5000 Charger	| 1	| 1,60€	| [AliExpress](https://pt.aliexpress.com/item/1005009339731648.html)	| better for LFP batteries. no MPPT |
 
 #### Battery:
-- Size: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md) 
+- Capacity: Aim for 6~10,000mAh (~8 days). If the sensors are disabled the battery life can be extended a lot. Conservative calculation [here](https://github.com/c1ph0r-git/lora-bridge/blob/main/battery.md) 
 - Chemistry: Prefer LiFePO4 for better heat resistance
 - Package: Go with either 18650 size (most used) or 21700 (slightly larger, more capacity, less cells, runs cooler)
 - Protection: verify if the battery includes a protection circuit (more expensive) or buy the suggested external circuit
