@@ -189,9 +189,9 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 #### Solar Charger:
 - Solar Charger: 
-    - No MPTT: **TP5000** (switching charger for LiFePO4)
-    - Fixed MPPT: **CN3791** (switching charger with Li-ON or LiFePO4 versions) or **CN3065** (linear charger for Li-ON, less current used by the circuit, more efficient in these low power applications)
-
+    - No MPTT: **TP5000** (switching charger for LiFePO4) or **CN3065** (linear charger for Li-ON, less current used by the circuit, more efficient in these low power applications)
+    - Fixed MPPT: **CN3791** (switching charger with Li-ON or LiFePO4 versions)
+ 
 | Solar Charger Module | Charger Type | Input Voltage Range | Max Charging Current | Solar Panel (Vmp) | Target Battery Chemistry |
 | :----------- |:--------------|:--------------|:--------------|:--------------|:--------------|  
 | CN3791 (LiFePO4) | Switching | 4.5 - 28V | Up to 4A (Modules usually limit to 2-3A | Specific fixed voltage matching module (6V, 9V, 12V, etc.) | Single-cell LiFePO4 (3.2V nom / 3.6V peak) |
@@ -201,8 +201,8 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
-| MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
-| MPPT CN3791 Charger	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
+| CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
+| CN3791 Charger	| 1	| 2,66€	| [AliExpress](https://s.click.aliexpress.com/e/_c30gOh6P)	| some replicas are faulty  |
 | TP5000 Charger	| 1	| 1,60€	| [AliExpress](https://pt.aliexpress.com/item/1005009339731648.html)	| better for LFP batteries. no MPPT |
 
 #### Battery:
@@ -229,7 +229,7 @@ Download [here](https://github.com/c1ph0r-git/lora-bridge/tree/main/pcb/gerber)
 | Part | Qty. | Cost | Source | Notes | 
 | :----------- |:--------------|:--------------|:--------------|:--------------|  
 | NIVIAN 9W 5V Solar Panel	| 1	| 20€	| [Amazon](https://www.amazon.es/-/pt/gp/product/B0D6NLJDLZ) |	|
-| MPPT CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
+| CN3065 Charger	| 1	| 1,60€	| [AliExpress](https://s.click.aliexpress.com/e/_c4FBq1C5)	| elegant choice |
 | Li-On 18650 Samsung INR18650-35E 3400mAh | 3 | ~9€ | [NKON](https://www.nkon.nl/pt/samsung-inr18650-35e-3400mah-8a-z-tag.html) 
 | BMS 1S 3.7V | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005010481169075.html) | | 
 | 18650 Battery support | 1 | 1€ | [AliExpress](https://pt.aliexpress.com/item/1005001955162216.html) | | 
